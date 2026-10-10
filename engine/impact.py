@@ -1,6 +1,6 @@
 """Impact scoring - how severe is this event, on a 1-10 scale?
 
-We wanted an impact score that a judge can audit in 10 seconds, so it is a
+I wanted an impact score that a judge can audit in 10 seconds, so it is a
 small transparent formula instead of a learned model:
 
     impact = clamp( base(event_type)            # typical severity of category

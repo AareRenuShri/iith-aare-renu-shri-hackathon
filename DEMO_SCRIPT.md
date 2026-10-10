@@ -12,7 +12,7 @@
 > "Markets move on news — but news is text, and risk systems only eat
 > numbers. RiskRadar is the bridge: it reads news and social media in
 > real time and converts them into three numbers a machine can act on —
-> sentiment, event type, and impact. Then we built two things that *act*
+> sentiment, event type, and impact. Then I built two things that *act*
 > on those numbers."
 
 ## 0:15 — Risk Engine tab (1 min 15s)
@@ -30,9 +30,9 @@
   high-risk flag, **and note the two chips at the bottom**: Module A just
   rebalanced NVDA and Module B just triggered a stress test. One text in,
   two systems moved.
-- Mention sources: "two feed types minimum were required — we have news and
+- Mention sources: "two feed types minimum were required — there are news and
   social bundled, plus live NewsAPI, GDELT and Reddit connectors when keys
-  and internet are available. We fail soft: the demo never depends on a
+  and internet are available. Fail-soft by design: the demo never depends on a
   network."
 
 ## 1:30 — Module A tab (1 min 15s)
@@ -56,7 +56,7 @@
 - Show portfolio card: "Synthetic wholesale banking portfolio — $5.36bn,
   38 positions, nine asset classes: corporate loans, CRE, government bonds,
   corporates, MBS, derivatives, commitments, equity."
-- "Whenever a signal lands with impact ≥ 7, we run a stress scenario keyed
+- "Whenever a signal lands with impact ≥ 7, I run a stress scenario keyed
   to the event type. Rates shock for Macroeconomic, credit shock for a
   default, and so on."
 - Show **before/after chart** + P&L by class: "The last trigger was a credit

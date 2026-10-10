@@ -2,9 +2,9 @@
 
 Processes every bundled news + social item through the full stack
 (engine -> Module A -> Module B), then prints a compact report and writes
-matplotlib charts to demo_outputs/. We use this for:
+matplotlib charts to demo_outputs/. Used for:
   * verifying the pipeline works (smoke test)
-  * generating the figures used in our report/presentation
+  * generating the figures used in the report/presentation
   * a no-browser fallback if a demo machine misbehaves
 
     python demo.py

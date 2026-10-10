@@ -5,11 +5,11 @@ has to care *which* model produced a signal:
 
     provider.analyze(text) -> (sentiment, event_type, impact, detail)
 
-Our default and demo provider is LexiconProvider (VADER + rules, offline,
+The default and demo provider is LexiconProvider (VADER + rules, offline,
 instant, explainable). Because the interface is clean, swapping in a
 transformer (e.g. FinBERT for sentiment + zero-shot BART for event labels)
-or an LLM API later is a drop-in change - we describe this in the report
-as our "upgrade path".
+or an LLM API later is a drop-in change - the report describes this as
+the "upgrade path".
 """
 from typing import Protocol, Tuple
 
@@ -48,7 +48,7 @@ class LexiconProvider:
 def get_provider() -> NLPProvider:
     """Pick the best available provider. For now: the offline one.
 
-    (We kept this factory so the config can later select "finbert" or "llm"
-    without touching any other file - see report, 'What we'd build next'.)
+    (This factory exists so the config can later select "finbert" or "llm"
+    without touching any other file - see the report, 'What I'd build next'.)
     """
     return LexiconProvider()

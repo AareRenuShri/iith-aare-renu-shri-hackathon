@@ -1,14 +1,15 @@
 """Finance-tuned sentiment lexicon.
 
-VADER is our base sentiment engine. It was originally built for social media,
-which is exactly why we picked it: it handles slang, ALL-CAPS, emoji and
+VADER is the base sentiment engine. It was originally built for social media,
+which is exactly why I picked it: it handles slang, ALL-CAPS, emoji and
 negation ("not good") out of the box, which matters a lot for the tweet side
-of our data. It is also instant on CPU, so the demo runs live.
+of the data. It is also instant on CPU, so the demo runs live.
 
 But VADER's general lexicon does not know finance jargon - words like
-"downgrade", "contagion", "buyback" or "guidance" are neutral to it. So we
+"downgrade", "contagion", "buyback" or "guidance" are neutral to it. So
 extend its lexicon with a curated finance lexicon. Every entry below was
-added by hand after looking at what our sample feeds actually contained.
+the entries below were added by hand after looking at what the sample feeds
+actually contained.
 """
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 

@@ -1,11 +1,11 @@
 """Event classification - turn free text into one categorical label.
 
-Design decision (worth explaining to judges): we use a transparent,
+Design decision (worth explaining to judges): the engine uses a transparent,
 priority-ordered keyword rule system rather than a black-box classifier.
 
 Why?
 1. It is fully explainable - every signal stores the keywords that fired,
-   so we can always answer "why did you classify this as a Credit Event?"
+   so the engine can always answer "why did you classify this as a Credit Event?"
 2. It needs no training data, no GPU and no internet - the demo cannot break.
 3. For a bounded domain (finance headlines) with ~10 categories, rules are
    genuinely competitive with ML while being auditable - a big deal in risk.
@@ -91,7 +91,7 @@ def classify_event(text: str) -> Tuple[str, List[str]]:
       1. most keyword matches
       2. tie -> higher priority (lower number)
       3. tie again -> first in definition order
-    If nothing matches we fall back to "Other".
+    If nothing matches, the classifier falls back to "Other".
     """
     text_l = text.lower()
     scores = {}   # category -> {"matches": n, "prio": p, "keywords": [...]}

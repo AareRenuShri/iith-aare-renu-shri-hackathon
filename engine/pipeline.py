@@ -130,7 +130,7 @@ class RiskEngine:
 
     # ------------------------------------------------------------------ #
     def start_sources(self, sources) -> List[threading.Thread]:
-        """Run every source in its own daemon thread, pushing into us."""
+        """Run every source in its own daemon thread, pushing into the engine."""
         threads = []
         for src in sources:
             def worker(s=src):

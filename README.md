@@ -120,7 +120,7 @@ pay-fixed swaps gain. Triggered when `impact ≥ 7` (the case study's threshold)
 - `data/riskradar.db` — SQLite history for queries
 - `demo_outputs/` — figures + full signal dump from the headless run
 
-## Team notes
+## Notes
 
 Built for a Phase 3 case study round. Demo walkthrough: `DEMO_SCRIPT.md`.
 Full design rationale, results and limitations: `docs/Project_Report_and_QA.pdf`.

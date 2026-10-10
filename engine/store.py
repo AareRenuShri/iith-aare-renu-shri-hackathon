@@ -1,6 +1,6 @@
 """Persistence - every signal is written to SQLite *and* appended to a
 JSONL file. This satisfies the "make signals available via API or file"
-requirement in the most literal way: we do both.
+requirement in the most literal way: this project does both.
 
 SQLite powers history/stats queries; the JSONL file is the simple,
 grep-able, human-friendly view of the same stream.

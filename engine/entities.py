@@ -1,6 +1,6 @@
 """Company dictionary + lightweight entity extraction.
 
-We maintain a hand-curated dictionary of the 20 companies in our mock index
+A hand-curated dictionary of the 20 companies in the mock index
 (a subset of the S&P 100, spread across sectors). Extraction is simple
 case-insensitive keyword matching with word boundaries - deliberately not a
 full NER model. For a hackathon index of 20 names this is fast, transparent
@@ -43,7 +43,7 @@ for _tk, (_name, _sec, _aliases) in COMPANIES.items():
     for _a in _aliases:
         _ALIAS_RE[_a] = (re.compile(r"(?<![\w$])" + re.escape(_a) + r"(?![\w])"), _tk)
 
-# A couple of common entities we mention but do NOT hold in the index;
+# A couple of common entities mentioned in feeds but not held in the index;
 # mapping them keeps sentiment flowing into "market-wide" buckets.
 WATCHLIST_EXTRA = {
     "V": ("Visa", "Financials", ["visa"]),

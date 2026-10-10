@@ -65,7 +65,7 @@ def create_app(engine, rebalancer, stress_tester) -> Flask:
 
     @app.route("/api/inject", methods=["POST"])
     def inject():
-        """Analyze any text on the fly - we use this live in the demo:
+        """Analyze any text on the fly - used live in the demo:
         type a headline, watch it flow through engine -> modules."""
         payload = request.get_json(silent=True) or {}
         text = (payload.get("text") or "").strip()

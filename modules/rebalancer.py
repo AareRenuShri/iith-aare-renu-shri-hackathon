@@ -25,7 +25,7 @@ from typing import Callable, List
 from engine.entities import COMPANIES
 from engine.models import Signal
 
-# Our mock index: every company in the entities dictionary (20 names,
+# The mock index: every company in the entities dictionary (20 names,
 # one per sector-heavy S&P 100 subset). The "index" starts equal-weighted.
 UNIVERSE: List[str] = list(COMPANIES.keys())
 
@@ -48,7 +48,7 @@ class IndexRebalancer:
 
     # ------------------------------------------------------------------ #
     def on_signal(self, signal: Signal):
-        """Called by the engine for every new signal (our subscription)."""
+        """Called by the engine for every new signal (the subscription)."""
         tickers = [c.ticker for c in signal.companies if c.ticker in self.weights]
         if not tickers:
             return  # signal not about any index member - nothing to do

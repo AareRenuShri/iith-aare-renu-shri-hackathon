@@ -19,13 +19,13 @@ class NewsItem:
     id: str
     source: str              # "news" | "social" | ...
     source_name: str         # e.g. "Reuters", "X (Twitter) - @handle"
-    text: str                # the raw text we analyze
+    text: str                # the raw text the engine analyzes
     url: str = ""
     published_at: str = ""   # ISO timestamp from the source (if any)
 
     @classmethod
     def from_dict(cls, d: dict) -> "NewsItem":
-        # Sources may give us "title", "text" or both - we just concatenate,
+        # Sources may give "title", "text" or both - just concatenate,
         # because both headline and body carry sentiment.
         text = " ".join(x for x in [d.get("title", ""), d.get("text", "")] if x).strip()
         return cls(

@@ -2,7 +2,7 @@
 
 Subscribes to the Event Classification + Impact Score stream. Whenever a
 high-impact event lands (impact >= 7 - the threshold the case study
-suggests), we run a simplified stress test over a synthetic wholesale
+suggests), I run a simplified stress test over a synthetic wholesale
 banking portfolio (defined in data/portfolio.csv):
 
     Geopolitical  -> equities -12%, credit spreads +180bp, oil-sector stress

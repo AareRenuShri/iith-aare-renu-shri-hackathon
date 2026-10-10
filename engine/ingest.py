@@ -36,7 +36,7 @@ def load_jsonl(path: Path) -> List[dict]:
     """Load a .jsonl file that contains JSON objects.
 
     Handles both strict JSONL (one object per line) and "pretty" files
-    where each object spans several lines - our bundled samples are
+    where each object spans several lines - the bundled samples are
     pretty-printed so they stay human-readable and diff-friendly.
     """
     raw = Path(path).read_text(encoding="utf-8")
@@ -73,7 +73,7 @@ class JSONLSource(BaseSource):
 
 class LiveFeedSimulator(BaseSource):
     """Streams bundled items like a live feed: one item every few seconds,
-    with jitter, forever. We use this in demos when live APIs are not
+    with jitter, forever. Used in demos when live APIs are not
     available - the rest of the system cannot tell the difference."""
 
     def __init__(self, paths: List[Path], min_gap: float = 2.0, max_gap: float = 5.0):
