@@ -123,4 +123,5 @@ pay-fixed swaps gain. Triggered when `impact ≥ 7` (the case study's threshold)
 ## Team notes
 
 Built for a Phase 3 case study round. Demo walkthrough: `DEMO_SCRIPT.md`.
-Full design rationale, results and limitations: `Project_Report.pdf`.
+Full design rationale, results and limitations: `docs/Project_Report_and_QA.pdf`.
+7-slide submission deck: `docs/Presentation_Deck.pdf`.
