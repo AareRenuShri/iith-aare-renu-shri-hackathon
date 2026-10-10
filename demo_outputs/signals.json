@@ -1,0 +1,1757 @@
+[
+ {
+  "signal_id": "sig_1791641380226_s006",
+  "ts": 1791641380.226414,
+  "item_id": "s006",
+  "source": "social",
+  "source_name": "X (Twitter) - @fedwatcher",
+  "text": "50bps cut incoming. Inflation at 2.4%. The Fed finally got its soft landing. Risk assets are going to LOVE this \ud83c\udf89",
+  "url": "https://x.com/fedwatcher/status/6",
+  "sentiment": 0.762,
+  "event_type": "Macroeconomic",
+  "impact": 6.5,
+  "sentiment_label": "positive",
+  "companies": [],
+  "matched_keywords": [
+   "inflation",
+   "the fed",
+   "soft landing"
+  ],
+  "impact_drivers": [
+   "base 6 (Macroeconomic)",
+   "-0.5 strongly positive sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380227_n001",
+  "ts": 1791641380.227332,
+  "item_id": "n001",
+  "source": "news",
+  "source_name": "Reuters",
+  "text": "Fed signals 50 basis point rate cut as inflation cools to 2.4% The Federal Reserve signaled a larger than expected interest rate cut after new data showed inflation cooled to 2.4%, boosting hopes of a soft landing for the economy.",
+  "url": "https://example.com/reuters-fed-cut",
+  "sentiment": 0.6597,
+  "event_type": "Macroeconomic",
+  "impact": 6.5,
+  "sentiment_label": "positive",
+  "companies": [],
+  "matched_keywords": [
+   "inflation",
+   "interest rate",
+   "rate cut",
+   "federal reserve",
+   "soft landing",
+   "economy"
+  ],
+  "impact_drivers": [
+   "base 6 (Macroeconomic)",
+   "-0.5 strongly positive sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380227_s002",
+  "ts": 1791641380.2277591,
+  "item_id": "s002",
+  "source": "social",
+  "source_name": "X (Twitter) - @wallstwizard",
+  "text": "Wow, Microsoft buying SecureNova for $12B. Massive deal. Security is the new battleground. Bullish on $MSFT \ud83d\udcc8",
+  "url": "https://x.com/wallstwizard/status/2",
+  "sentiment": 0.7845,
+  "event_type": "Merger/Acquisition",
+  "impact": 5.5,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "sector": "Technology"
+   }
+  ],
+  "matched_keywords": [
+   "buying"
+  ],
+  "impact_drivers": [
+   "base 5 (Merger/Acquisition)",
+   "+1 magnitude (record/massive)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380228_n002",
+  "ts": 1791641380.228538,
+  "item_id": "n002",
+  "source": "news",
+  "source_name": "Bloomberg",
+  "text": "BREAKING: Microsoft to acquire cybersecurity startup SecureNova for $12 billion Microsoft announced a $12 billion acquisition of cybersecurity firm SecureNova, its largest deal this year, as it races to expand enterprise security offerings.",
+  "url": "https://example.com/bloomberg-msft-acquisition",
+  "sentiment": 0.5719,
+  "event_type": "Merger/Acquisition",
+  "impact": 6.5,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "MSFT",
+    "name": "Microsoft",
+    "sector": "Technology"
+   }
+  ],
+  "matched_keywords": [
+   "acquisition",
+   "acquire",
+   "acquisition of",
+   "to acquire"
+  ],
+  "impact_drivers": [
+   "base 5 (Merger/Acquisition)",
+   "+1 urgency (breaking/surprise)",
+   "+1 magnitude (record/massive)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380228_s001",
+  "ts": 1791641380.2289312,
+  "item_id": "s001",
+  "source": "social",
+  "source_name": "X (Twitter) - @marketsnomad",
+  "text": "$NVDA earnings were INSANE. Data center revenue off the charts. This AI trade is not slowing down anytime soon \ud83d\ude80",
+  "url": "https://x.com/marketsnomad/status/1",
+  "sentiment": 0.6037,
+  "event_type": "Earnings",
+  "impact": 3.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "sector": "Technology"
+   }
+  ],
+  "matched_keywords": [
+   "earnings",
+   "revenue"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380229_n003",
+  "ts": 1791641380.229769,
+  "item_id": "n003",
+  "source": "news",
+  "source_name": "CNBC",
+  "text": "Nvidia shares surge 8% after record data-center revenue beats estimates Nvidia reported record data-center revenue that crushed analyst estimates, sending shares up 8% in early trading as AI chip demand shows no signs of slowing.",
+  "url": "https://example.com/cnbc-nvda-earnings",
+  "sentiment": 0.9578,
+  "event_type": "Earnings",
+  "impact": 4.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "sector": "Technology"
+   }
+  ],
+  "matched_keywords": [
+   "revenue",
+   "beats",
+   "estimates",
+   "record"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "+1 magnitude (record/massive)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380230_s003",
+  "ts": 1791641380.230185,
+  "item_id": "s003",
+  "source": "social",
+  "source_name": "X (Twitter) - @macro_nomad",
+  "text": "OPEC cutting production AGAIN. Oil up 5%. Geopolitical risk is back on the menu boys. Inflation comeback incoming \ud83d\ude2c",
+  "url": "https://x.com/macro_nomad/status/3",
+  "sentiment": -0.6124,
+  "event_type": "Geopolitical",
+  "impact": 7.5,
+  "sentiment_label": "negative",
+  "companies": [],
+  "matched_keywords": [
+   "opec",
+   "geopolitical"
+  ],
+  "impact_drivers": [
+   "base 6.5 (Geopolitical)",
+   "+1 strongly negative sentiment"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380231_n004",
+  "ts": 1791641380.231036,
+  "item_id": "n004",
+  "source": "news",
+  "source_name": "Reuters",
+  "text": "OPEC+ surprise production cut escalates trade tensions with Washington OPEC+ announced a surprise oil production cut of 1 million barrels per day, escalating geopolitical tensions with Washington and sending crude prices up 5%.",
+  "url": "https://example.com/reuters-opec-cut",
+  "sentiment": -0.8442,
+  "event_type": "Geopolitical",
+  "impact": 8.5,
+  "sentiment_label": "negative",
+  "companies": [],
+  "matched_keywords": [
+   "opec",
+   "geopolitical",
+   "escalating",
+   "tensions",
+   "washington"
+  ],
+  "impact_drivers": [
+   "base 6.5 (Geopolitical)",
+   "+1 urgency (breaking/surprise)",
+   "+1 strongly negative sentiment"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380231_s004",
+  "ts": 1791641380.231543,
+  "item_id": "s004",
+  "source": "social",
+  "source_name": "X (Twitter) - @bankstress",
+  "text": "Pacific Crest Bank Chapter 11. Another bank failure. How is this not a bigger story?? Contagion risk is real. Getting nervous \ud83d\udea8",
+  "url": "https://x.com/bankstress/status/4",
+  "sentiment": -0.8924,
+  "event_type": "Credit Event",
+  "impact": 9.0,
+  "sentiment_label": "negative",
+  "companies": [],
+  "matched_keywords": [
+   "chapter 11",
+   "contagion"
+  ],
+  "impact_drivers": [
+   "base 7 (Credit Event)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380232_n005",
+  "ts": 1791641380.232471,
+  "item_id": "n005",
+  "source": "news",
+  "source_name": "Financial Times",
+  "text": "Regional lender Pacific Crest Bank files for Chapter 11 bankruptcy Pacific Crest Bank filed for Chapter 11 bankruptcy protection after a failed recapitalization, in the largest regional bank failure since 2023. Regulators are monitoring contagion risk.",
+  "url": "https://example.com/ft-bankruptcy",
+  "sentiment": -0.9702,
+  "event_type": "Credit Event",
+  "impact": 10.0,
+  "sentiment_label": "negative",
+  "companies": [],
+  "matched_keywords": [
+   "bankruptcy",
+   "chapter 11",
+   "contagion"
+  ],
+  "impact_drivers": [
+   "base 7 (Credit Event)",
+   "+1 magnitude (record/massive)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380232_s005",
+  "ts": 1791641380.232927,
+  "item_id": "s005",
+  "source": "social",
+  "source_name": "X (Twitter) - @techticker",
+  "text": "iPhone 17 Pro pre-orders up 30%. Apple back baby. That rumored $1999 price point didn't scare anyone off \ud83d\ude05 $AAPL",
+  "url": "https://x.com/techticker/status/5",
+  "sentiment": 0.6283,
+  "event_type": "Product Launch",
+  "impact": 2.5,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "sector": "Technology"
+   }
+  ],
+  "matched_keywords": [
+   "pre-orders"
+  ],
+  "impact_drivers": [
+   "base 3 (Product Launch)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380233_n006",
+  "ts": 1791641380.233773,
+  "item_id": "n006",
+  "source": "news",
+  "source_name": "WSJ",
+  "text": "Apple unveils iPhone 17 Pro with on-device AI, orders up 30% on launch day Apple unveiled the iPhone 17 Pro featuring on-device AI models, with pre-orders up 30% versus last year on launch day, easing concerns about a slow product cycle.",
+  "url": "https://example.com/wsj-apple-launch",
+  "sentiment": 0.7351,
+  "event_type": "Product Launch",
+  "impact": 2.5,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "AAPL",
+    "name": "Apple",
+    "sector": "Technology"
+   }
+  ],
+  "matched_keywords": [
+   "unveils",
+   "unveiled",
+   "launch",
+   "pre-orders"
+  ],
+  "impact_drivers": [
+   "base 3 (Product Launch)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380234_s007",
+  "ts": 1791641380.2342138,
+  "item_id": "s007",
+  "source": "social",
+  "source_name": "X (Twitter) - @shortseller_sam",
+  "text": "DOJ probe into Goldman and Morgan Stanley bond trading. Every time I think the banks have cleaned up... they haven't. $GS",
+  "url": "https://x.com/shortseller_sam/status/7",
+  "sentiment": -0.4939,
+  "event_type": "Regulatory/Legal",
+  "impact": 5.0,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "GS",
+    "name": "Goldman Sachs",
+    "sector": "Financials"
+   }
+  ],
+  "matched_keywords": [
+   "probe",
+   "doj"
+  ],
+  "impact_drivers": [
+   "base 5 (Regulatory/Legal)"
+  ],
+  "risk_flag": "watch",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380235_n007",
+  "ts": 1791641380.235005,
+  "item_id": "n007",
+  "source": "news",
+  "source_name": "Reuters",
+  "text": "Goldman Sachs and Morgan Stanley face DOJ probe over bond trading practices The Department of Justice opened an investigation into bond trading practices at Goldman Sachs and Morgan Stanley, examining whether traders misled clients on bond prices.",
+  "url": "https://example.com/reuters-gs-probe",
+  "sentiment": -0.4939,
+  "event_type": "Regulatory/Legal",
+  "impact": 5.0,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "GS",
+    "name": "Goldman Sachs",
+    "sector": "Financials"
+   }
+  ],
+  "matched_keywords": [
+   "probe",
+   "investigation",
+   "doj"
+  ],
+  "impact_drivers": [
+   "base 5 (Regulatory/Legal)"
+  ],
+  "risk_flag": "watch",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380235_s008",
+  "ts": 1791641380.235447,
+  "item_id": "s008",
+  "source": "social",
+  "source_name": "X (Twitter) - @aero_watch",
+  "text": "Spirit Aero says supply chain problems last till 2027. Boeing production delays again. $BA holders I am so sorry \ud83d\ude14",
+  "url": "https://x.com/aero_watch/status/8",
+  "sentiment": -0.6076,
+  "event_type": "Supply Chain",
+  "impact": 5.0,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "BA",
+    "name": "Boeing",
+    "sector": "Industrial"
+   }
+  ],
+  "matched_keywords": [
+   "supply chain",
+   "delays"
+  ],
+  "impact_drivers": [
+   "base 4 (Supply Chain)",
+   "+1 strongly negative sentiment"
+  ],
+  "risk_flag": "watch",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380236_n008",
+  "ts": 1791641380.2362509,
+  "item_id": "n008",
+  "source": "news",
+  "source_name": "Bloomberg",
+  "text": "Boeing supplier Spirit AeroSystems warns of supply chain disruption into 2027 Spirit AeroSystems warned of extended supply chain disruption that could delay Boeing 737 production into 2027, citing shortages of critical fuselage parts.",
+  "url": "https://example.com/bloomberg-boeing-supply",
+  "sentiment": -0.8807,
+  "event_type": "Supply Chain",
+  "impact": 5.0,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "BA",
+    "name": "Boeing",
+    "sector": "Industrial"
+   }
+  ],
+  "matched_keywords": [
+   "supply chain",
+   "shortages",
+   "delay",
+   "disruption"
+  ],
+  "impact_drivers": [
+   "base 4 (Supply Chain)",
+   "+1 strongly negative sentiment"
+  ],
+  "risk_flag": "watch",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380236_s009",
+  "ts": 1791641380.236632,
+  "item_id": "s009",
+  "source": "social",
+  "source_name": "X (Twitter) - @retail_raider",
+  "text": "Prime Day record for Amazon. Beat their own guidance by $4B. AWS + ads = money printer. $AMZN to the moon \ud83c\udf19",
+  "url": "https://x.com/retail_raider/status/9",
+  "sentiment": 0.8074,
+  "event_type": "Earnings",
+  "impact": 4.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "AMZN",
+    "name": "Amazon",
+    "sector": "Consumer"
+   }
+  ],
+  "matched_keywords": [
+   "guidance",
+   "record"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "+1 magnitude (record/massive)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380237_n009",
+  "ts": 1791641380.237419,
+  "item_id": "n009",
+  "source": "news",
+  "source_name": "CNBC",
+  "text": "Amazon announces record Prime Day sales, beats guidance by $4 billion Amazon announced record Prime Day sales beating its own guidance by $4 billion, with strong growth in advertising revenue and third-party seller services.",
+  "url": "https://example.com/cnbc-amazon-prime",
+  "sentiment": 0.9393,
+  "event_type": "Earnings",
+  "impact": 4.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "AMZN",
+    "name": "Amazon",
+    "sector": "Consumer"
+   }
+  ],
+  "matched_keywords": [
+   "revenue",
+   "guidance",
+   "beats",
+   "record"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "+1 magnitude (record/massive)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380237_s010",
+  "ts": 1791641380.237824,
+  "item_id": "s010",
+  "source": "social",
+  "source_name": "X (Twitter) - @tesla_bear",
+  "text": "SEC charges Tesla over autonomous driving claims. Finally some accountability. The hype was WAY overdone. $TSLA",
+  "url": "https://x.com/tesla_bear/status/10",
+  "sentiment": -0.6124,
+  "event_type": "Regulatory/Legal",
+  "impact": 7.0,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "TSLA",
+    "name": "Tesla",
+    "sector": "Auto"
+   }
+  ],
+  "matched_keywords": [
+   "sec charges",
+   "charges"
+  ],
+  "impact_drivers": [
+   "base 5 (Regulatory/Legal)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380238_n010",
+  "ts": 1791641380.238695,
+  "item_id": "n010",
+  "source": "news",
+  "source_name": "Reuters",
+  "text": "SEC charges Tesla with disclosure failures over autonomous driving claims The SEC charged Tesla with disclosure failures regarding its autonomous driving claims, alleging the company overstated capability timelines to investors. Shares slipped 3%.",
+  "url": "https://example.com/reuters-tesla-sec",
+  "sentiment": -0.8225,
+  "event_type": "Regulatory/Legal",
+  "impact": 7.0,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "TSLA",
+    "name": "Tesla",
+    "sector": "Auto"
+   }
+  ],
+  "matched_keywords": [
+   "sec charged",
+   "sec charges",
+   "charges"
+  ],
+  "impact_drivers": [
+   "base 5 (Regulatory/Legal)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380239_s011",
+  "ts": 1791641380.239115,
+  "item_id": "s011",
+  "source": "social",
+  "source_name": "X (Twitter) - @chip_chronicler",
+  "text": "US chip sanctions on China are brutal for Nvidia and AMD. Gonna hurt. China was their biggest growth market \ud83d\udc80",
+  "url": "https://x.com/chip_chronicler/status/11",
+  "sentiment": -0.8519,
+  "event_type": "Geopolitical",
+  "impact": 8.5,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "sector": "Technology"
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "sector": "Technology"
+   }
+  ],
+  "matched_keywords": [
+   "sanctions"
+  ],
+  "impact_drivers": [
+   "base 6.5 (Geopolitical)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380240_n011",
+  "ts": 1791641380.240038,
+  "item_id": "n011",
+  "source": "news",
+  "source_name": "Financial Times",
+  "text": "US slaps fresh sanctions on chip exports, hitting Nvidia and AMD sales in China The US imposed fresh export sanctions on advanced AI chips to China, dealing a blow to Nvidia and AMD sales in one of their largest markets amid rising geopolitical conflict.",
+  "url": "https://example.com/ft-chip-sanctions",
+  "sentiment": -0.6808,
+  "event_type": "Geopolitical",
+  "impact": 9.5,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "sector": "Technology"
+   },
+   {
+    "ticker": "AMD",
+    "name": "AMD",
+    "sector": "Technology"
+   }
+  ],
+  "matched_keywords": [
+   "sanctions",
+   "conflict",
+   "geopolitical"
+  ],
+  "impact_drivers": [
+   "base 6.5 (Geopolitical)",
+   "+1 magnitude (record/massive)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380240_s012",
+  "ts": 1791641380.240407,
+  "item_id": "s012",
+  "source": "social",
+  "source_name": "X (Twitter) - @pharma_phil",
+  "text": "JNJ winning that talc lawsuit is HUGE. Legal overhang gone. Sleep well $JNJ shareholders \ud83d\udca4",
+  "url": "https://x.com/pharma_phil/status/12",
+  "sentiment": 0.5319,
+  "event_type": "Regulatory/Legal",
+  "impact": 6.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "JNJ",
+    "name": "Johnson & Johnson",
+    "sector": "Healthcare"
+   }
+  ],
+  "matched_keywords": [
+   "lawsuit"
+  ],
+  "impact_drivers": [
+   "base 5 (Regulatory/Legal)",
+   "+1 magnitude (record/massive)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380241_n012",
+  "ts": 1791641380.2412002,
+  "item_id": "n012",
+  "source": "news",
+  "source_name": "Bloomberg",
+  "text": "Johnson & Johnson wins major lawsuit over talc claims, shares rally Johnson & Johnson won a major court ruling over talc litigation claims, removing a key legal overhang and sending shares up 4% in afternoon trading.",
+  "url": "https://example.com/bloomberg-jnj-lawsuit",
+  "sentiment": 0.791,
+  "event_type": "Regulatory/Legal",
+  "impact": 6.5,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "JNJ",
+    "name": "Johnson & Johnson",
+    "sector": "Healthcare"
+   }
+  ],
+  "matched_keywords": [
+   "lawsuit",
+   "litigation",
+   "court ruling",
+   "ruling"
+  ],
+  "impact_drivers": [
+   "base 5 (Regulatory/Legal)",
+   "+1 magnitude (record/massive)",
+   "-0.5 strongly positive sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380241_s013",
+  "ts": 1791641380.241663,
+  "item_id": "s013",
+  "source": "social",
+  "source_name": "X (Twitter) - @wmt_shopper",
+  "text": "Walmart raising guidance AGAIN. Rich people love saving money too lol. $WMT is the most boring best stock in my portfolio",
+  "url": "https://x.com/wmt_shopper/status/13",
+  "sentiment": 0.9258,
+  "event_type": "Earnings",
+  "impact": 3.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "WMT",
+    "name": "Walmart",
+    "sector": "Consumer"
+   }
+  ],
+  "matched_keywords": [
+   "guidance"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380242_n013",
+  "ts": 1791641380.242421,
+  "item_id": "n013",
+  "source": "news",
+  "source_name": "Reuters",
+  "text": "Walmart raises full-year forecast as discounting wins over high-income shoppers Walmart raised its full-year profit forecast, saying gains with higher-income households continued even as inflation pressures ease for consumers.",
+  "url": "https://example.com/reuters-walmart-forecast",
+  "sentiment": 0.8555,
+  "event_type": "Earnings",
+  "impact": 3.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "WMT",
+    "name": "Walmart",
+    "sector": "Consumer"
+   }
+  ],
+  "matched_keywords": [
+   "profit",
+   "forecast"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380242_s014",
+  "ts": 1791641380.242794,
+  "item_id": "s014",
+  "source": "social",
+  "source_name": "X (Twitter) - @heavy_equity",
+  "text": "Caterpillar profit warning. Construction slowdown is getting ugly. Backlogs shrinking. Not good at all $CAT \ud83d\udcc9",
+  "url": "https://x.com/heavy_equity/status/14",
+  "sentiment": -0.6711,
+  "event_type": "Earnings",
+  "impact": 5.5,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "CAT",
+    "name": "Caterpillar",
+    "sector": "Industrial"
+   }
+  ],
+  "matched_keywords": [
+   "profit"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "watch",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380243_n014",
+  "ts": 1791641380.243521,
+  "item_id": "n014",
+  "source": "news",
+  "source_name": "CNBC",
+  "text": "Caterpillar profit warning: construction slowdown drags Q3 revenue lower Caterpillar issued a profit warning as a construction slowdown dragged quarterly revenue lower, with dealers reporting shrinking order backlogs.",
+  "url": "https://example.com/cnbc-cat-warning",
+  "sentiment": -0.5994,
+  "event_type": "Earnings",
+  "impact": 4.5,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "CAT",
+    "name": "Caterpillar",
+    "sector": "Industrial"
+   }
+  ],
+  "matched_keywords": [
+   "profit",
+   "revenue",
+   "q3"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "+1 strongly negative sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380243_s015",
+  "ts": 1791641380.243928,
+  "item_id": "s015",
+  "source": "social",
+  "source_name": "X (Twitter) - @energy_elder",
+  "text": "Exxon dropping $20B on Gulf refining expansion. Love the conviction. Energy transition doubters in shambles. $XOM",
+  "url": "https://x.com/energy_elder/status/15",
+  "sentiment": 0.7783,
+  "event_type": "Other",
+  "impact": 2.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "XOM",
+    "name": "Exxon Mobil",
+    "sector": "Energy"
+   }
+  ],
+  "matched_keywords": [],
+  "impact_drivers": [
+   "base 2.5 (Other)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380244_n015",
+  "ts": 1791641380.244711,
+  "item_id": "n015",
+  "source": "news",
+  "source_name": "WSJ",
+  "text": "Exxon Mobil pledges $20 billion expansion in Gulf coast refining Exxon Mobil announced a $20 billion expansion of Gulf coast refining and chemical operations, calling it a major growth investment despite energy transition headwinds.",
+  "url": "https://example.com/wsj-xom-expansion",
+  "sentiment": 0.8448,
+  "event_type": "Product Launch",
+  "impact": 4.5,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "XOM",
+    "name": "Exxon Mobil",
+    "sector": "Energy"
+   }
+  ],
+  "matched_keywords": [
+   "announced a"
+  ],
+  "impact_drivers": [
+   "base 3 (Product Launch)",
+   "+1 magnitude (record/massive)",
+   "-0.5 strongly positive sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380245_s016",
+  "ts": 1791641380.245146,
+  "item_id": "s016",
+  "source": "social",
+  "source_name": "X (Twitter) - @vol_vulture",
+  "text": "Global selloff accelerating. Recession fears everywhere. VIX at 18-month highs. Cash is a position people. Terrifying tape \ud83d\ude31",
+  "url": "https://x.com/vol_vulture/status/16",
+  "sentiment": -0.9618,
+  "event_type": "Market Volatility",
+  "impact": 7.5,
+  "sentiment_label": "negative",
+  "companies": [],
+  "matched_keywords": [
+   "selloff",
+   "vix"
+  ],
+  "impact_drivers": [
+   "base 4.5 (Market Volatility)",
+   "+1 magnitude (record/massive)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380245_n016",
+  "ts": 1791641380.245908,
+  "item_id": "n016",
+  "source": "news",
+  "source_name": "Reuters",
+  "text": "Global market selloff: stocks plunge as recession fears grip investors A global market selloff intensified as stocks plunged on recession fears, with volatility spiking to its highest level in eighteen months.",
+  "url": "https://example.com/reuters-selloff",
+  "sentiment": -0.9849,
+  "event_type": "Market Volatility",
+  "impact": 7.5,
+  "sentiment_label": "negative",
+  "companies": [],
+  "matched_keywords": [
+   "selloff",
+   "plunge",
+   "plunged",
+   "volatility"
+  ],
+  "impact_drivers": [
+   "base 4.5 (Market Volatility)",
+   "+1 magnitude (record/massive)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380246_s017",
+  "ts": 1791641380.246337,
+  "item_id": "s017",
+  "source": "social",
+  "source_name": "X (Twitter) - @credit_crunch",
+  "text": "Moody's downgrading Chevron of all companies. Weak cash flow + rising debt. Nobody is safe in this tape $CVX",
+  "url": "https://x.com/credit_crunch/status/17",
+  "sentiment": -0.5574,
+  "event_type": "Credit Event",
+  "impact": 9.0,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "CVX",
+    "name": "Chevron",
+    "sector": "Energy"
+   }
+  ],
+  "matched_keywords": [
+   "downgrading"
+  ],
+  "impact_drivers": [
+   "base 7 (Credit Event)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380247_n017",
+  "ts": 1791641380.2471628,
+  "item_id": "n017",
+  "source": "news",
+  "source_name": "Bloomberg",
+  "text": "Moody's downgrades Chevron credit rating on weak cash flow outlook Moody's downgraded Chevron's credit rating by one notch, citing a weak cash flow outlook and rising debt, in a surprise move for the oil major.",
+  "url": "https://example.com/bloomberg-chevron-downgrade",
+  "sentiment": -0.8481,
+  "event_type": "Credit Event",
+  "impact": 10.0,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "CVX",
+    "name": "Chevron",
+    "sector": "Energy"
+   }
+  ],
+  "matched_keywords": [
+   "downgraded",
+   "downgrades",
+   "credit rating"
+  ],
+  "impact_drivers": [
+   "base 7 (Credit Event)",
+   "+1 urgency (breaking/surprise)",
+   "+1 magnitude (record/massive)",
+   "+1 strongly negative sentiment"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380247_s018",
+  "ts": 1791641380.247607,
+  "item_id": "s018",
+  "source": "social",
+  "source_name": "X (Twitter) - @ar_augur",
+  "text": "Tried the new Meta AR glasses at the conference. They are actually GOOD. $META might be onto something real this time \ud83d\udd25",
+  "url": "https://x.com/ar_augur/status/18",
+  "sentiment": 0.3034,
+  "event_type": "Other",
+  "impact": 3.5,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "META",
+    "name": "Meta Platforms",
+    "sector": "Technology"
+   }
+  ],
+  "matched_keywords": [],
+  "impact_drivers": [
+   "base 2.5 (Other)",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380248_n018",
+  "ts": 1791641380.248363,
+  "item_id": "n018",
+  "source": "news",
+  "source_name": "CNBC",
+  "text": "Meta unveils compact AR glasses at developer conference, stock jumps Meta unveiled compact augmented reality glasses at its developer conference to strong reviews, and the stock jumped 5% as analysts flagged a new growth frontier.",
+  "url": "https://example.com/cnbc-meta-ar",
+  "sentiment": 0.8225,
+  "event_type": "Product Launch",
+  "impact": 2.5,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "META",
+    "name": "Meta Platforms",
+    "sector": "Technology"
+   }
+  ],
+  "matched_keywords": [
+   "unveils",
+   "unveiled"
+  ],
+  "impact_drivers": [
+   "base 3 (Product Launch)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380248_s019",
+  "ts": 1791641380.248768,
+  "item_id": "s019",
+  "source": "social",
+  "source_name": "X (Twitter) - @cola_catastrophe",
+  "text": "Coca-Cola recalling batches nationwide. Contamination scare. Absolute nightmare scenario for a brand like that. $KO",
+  "url": "https://x.com/cola_catastrophe/status/19",
+  "sentiment": -0.8519,
+  "event_type": "Operational/Quality",
+  "impact": 7.5,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "KO",
+    "name": "Coca-Cola",
+    "sector": "Consumer"
+   }
+  ],
+  "matched_keywords": [
+   "recalling",
+   "contamination"
+  ],
+  "impact_drivers": [
+   "base 4.5 (Operational/Quality)",
+   "+1 magnitude (record/massive)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380249_n019",
+  "ts": 1791641380.249534,
+  "item_id": "n019",
+  "source": "news",
+  "source_name": "Financial Times",
+  "text": "Coca-Cola recall: contamination scare triggers nationwide product recall Coca-Cola issued a nationwide recall of select beverage batches after a contamination scare, a rare quality crisis for the consumer giant.",
+  "url": "https://example.com/ft-ko-recall",
+  "sentiment": -0.9839,
+  "event_type": "Operational/Quality",
+  "impact": 7.5,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "KO",
+    "name": "Coca-Cola",
+    "sector": "Consumer"
+   }
+  ],
+  "matched_keywords": [
+   "recall",
+   "contamination"
+  ],
+  "impact_drivers": [
+   "base 4.5 (Operational/Quality)",
+   "+1 magnitude (record/massive)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380250_s020",
+  "ts": 1791641380.250071,
+  "item_id": "s020",
+  "source": "social",
+  "source_name": "X (Twitter) - @biotech_bull",
+  "text": "Pfizer gets FDA approval for its cancer therapy in RECORD time. Oncology pipeline delivering. $PFE quietly having a great year \ud83d\udc8a",
+  "url": "https://x.com/biotech_bull/status/20",
+  "sentiment": 0.8143,
+  "event_type": "Earnings",
+  "impact": 3.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "PFE",
+    "name": "Pfizer",
+    "sector": "Healthcare"
+   }
+  ],
+  "matched_keywords": [
+   "record"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "+1 magnitude (record/massive)",
+   "-1 minor",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380250_n020",
+  "ts": 1791641380.2509,
+  "item_id": "n020",
+  "source": "news",
+  "source_name": "Reuters",
+  "text": "Pfizer wins FDA approval for breakthrough cancer therapy Pfizer won FDA approval for its breakthrough cancer therapy after a record-fast review, a major win for its oncology pipeline.",
+  "url": "https://example.com/reuters-pfizer-fda",
+  "sentiment": 0.9493,
+  "event_type": "Earnings",
+  "impact": 4.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "PFE",
+    "name": "Pfizer",
+    "sector": "Healthcare"
+   }
+  ],
+  "matched_keywords": [
+   "record"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "+1 magnitude (record/massive)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380251_s021",
+  "ts": 1791641380.251418,
+  "item_id": "s021",
+  "source": "social",
+  "source_name": "X (Twitter) - @cyber_cassandra",
+  "text": "Ransomware taking down wire ops at major US banks. This is the cyberattack everyone warned about. The sector is NOT prepared \ud83d\udea8",
+  "url": "https://x.com/cyber_cassandra/status/21",
+  "sentiment": -0.8902,
+  "event_type": "Cybersecurity",
+  "impact": 8.5,
+  "sentiment_label": "negative",
+  "companies": [],
+  "matched_keywords": [
+   "ransomware",
+   "cyberattack"
+  ],
+  "impact_drivers": [
+   "base 5.5 (Cybersecurity)",
+   "+1 magnitude (record/massive)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380252_n021",
+  "ts": 1791641380.252246,
+  "item_id": "n021",
+  "source": "news",
+  "source_name": "WSJ",
+  "text": "Massive ransomware attack disrupts operations at major US banks A massive ransomware attack disrupted wire operations at several major US banks, exposing cybersecurity weaknesses across the financial sector.",
+  "url": "https://example.com/wsj-banks-ransomware",
+  "sentiment": -0.9588,
+  "event_type": "Cybersecurity",
+  "impact": 8.5,
+  "sentiment_label": "negative",
+  "companies": [],
+  "matched_keywords": [
+   "ransomware"
+  ],
+  "impact_drivers": [
+   "base 5.5 (Cybersecurity)",
+   "+1 magnitude (record/massive)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380252_s022",
+  "ts": 1791641380.2526982,
+  "item_id": "s022",
+  "source": "social",
+  "source_name": "X (Twitter) - @yield_hawkeye",
+  "text": "JPM record profit, dividend hike, $30B buyback. Jamie Dimon just doesn't miss. Best run bank on the planet $JPM \ud83c\udfc6",
+  "url": "https://x.com/yield_hawkeye/status/22",
+  "sentiment": 0.8972,
+  "event_type": "Earnings",
+  "impact": 4.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "JPM",
+    "name": "JPMorgan Chase",
+    "sector": "Financials"
+   }
+  ],
+  "matched_keywords": [
+   "profit",
+   "record"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "+1 magnitude (record/massive)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380253_n022",
+  "ts": 1791641380.253452,
+  "item_id": "n022",
+  "source": "news",
+  "source_name": "Bloomberg",
+  "text": "JPMorgan reports record quarterly profit, lifts dividend and buyback JPMorgan reported record quarterly profit on strong trading and lending revenue, lifting its dividend and announcing a $30 billion share buyback.",
+  "url": "https://example.com/bloomberg-jpm-results",
+  "sentiment": 0.9843,
+  "event_type": "Earnings",
+  "impact": 4.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "JPM",
+    "name": "JPMorgan Chase",
+    "sector": "Financials"
+   }
+  ],
+  "matched_keywords": [
+   "profit",
+   "revenue",
+   "record"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "+1 magnitude (record/massive)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380253_s023",
+  "ts": 1791641380.253865,
+  "item_id": "s023",
+  "source": "social",
+  "source_name": "X (Twitter) - @stream_stalker",
+  "text": "Disney+ finally profitable for a full year. Took forever but streaming is now a real business. $DIS turnaround is real \ud83c\udf7f",
+  "url": "https://x.com/stream_stalker/status/23",
+  "sentiment": 0.7096,
+  "event_type": "Earnings",
+  "impact": 4.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "DIS",
+    "name": "Walt Disney",
+    "sector": "Media"
+   }
+  ],
+  "matched_keywords": [
+   "profitable"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "-0.5 strongly positive sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380254_n023",
+  "ts": 1791641380.254604,
+  "item_id": "n023",
+  "source": "news",
+  "source_name": "CNBC",
+  "text": "Disney+ subscriber growth accelerates, streaming turns first full-year profit Disney+ subscriber growth accelerated and the streaming business turned its first full-year profit, easing pressure on CEO succession plans.",
+  "url": "https://example.com/cnbc-disney-streaming",
+  "sentiment": 0.9559,
+  "event_type": "Earnings",
+  "impact": 3.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "DIS",
+    "name": "Walt Disney",
+    "sector": "Media"
+   }
+  ],
+  "matched_keywords": [
+   "profit",
+   "subscriber growth"
+  ],
+  "impact_drivers": [
+   "base 3.5 (Earnings)",
+   "-0.5 strongly positive sentiment"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380255_s024",
+  "ts": 1791641380.255,
+  "item_id": "s024",
+  "source": "social",
+  "source_name": "X (Twitter) - @tariff_tracker",
+  "text": "25% tariffs on European autos proposed. This trade war keeps escalating. Global automakers getting wrecked. Chaos \ud83c\udf2a\ufe0f",
+  "url": "https://x.com/tariff_tracker/status/24",
+  "sentiment": -0.8957,
+  "event_type": "Geopolitical",
+  "impact": 10.0,
+  "sentiment_label": "negative",
+  "companies": [],
+  "matched_keywords": [
+   "war",
+   "tariffs",
+   "trade war",
+   "escalating"
+  ],
+  "impact_drivers": [
+   "base 6.5 (Geopolitical)",
+   "+1 urgency (breaking/surprise)",
+   "+1 magnitude (record/massive)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380255_n024",
+  "ts": 1791641380.2558138,
+  "item_id": "n024",
+  "source": "news",
+  "source_name": "Reuters",
+  "text": "Trump administration proposes sweeping tariffs on European auto imports The administration proposed sweeping tariffs of up to 25% on European auto imports, escalating trade conflict with the EU and pressuring global automakers.",
+  "url": "https://example.com/reuters-eu-tariffs",
+  "sentiment": -0.8779,
+  "event_type": "Geopolitical",
+  "impact": 10.0,
+  "sentiment_label": "negative",
+  "companies": [],
+  "matched_keywords": [
+   "tariffs",
+   "conflict",
+   "escalating"
+  ],
+  "impact_drivers": [
+   "base 6.5 (Geopolitical)",
+   "+1 urgency (breaking/surprise)",
+   "+1 magnitude (record/massive)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380256_s025",
+  "ts": 1791641380.256315,
+  "item_id": "s025",
+  "source": "social",
+  "source_name": "X (Twitter) - @fee_fighter",
+  "text": "Antitrust lawsuit vs Visa and Mastercard on interchange fees. Regulators want structural remedies. The payment giants' moat under attack $V $MA",
+  "url": "https://x.com/fee_fighter/status/25",
+  "sentiment": -0.8555,
+  "event_type": "Regulatory/Legal",
+  "impact": 7.0,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "V",
+    "name": "Visa",
+    "sector": "Financials"
+   },
+   {
+    "ticker": "MA",
+    "name": "Mastercard",
+    "sector": "Financials"
+   }
+  ],
+  "matched_keywords": [
+   "antitrust",
+   "regulators",
+   "lawsuit"
+  ],
+  "impact_drivers": [
+   "base 5 (Regulatory/Legal)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380257_n025",
+  "ts": 1791641380.2570271,
+  "item_id": "n025",
+  "source": "news",
+  "source_name": "Financial Times",
+  "text": "Visa and Mastercard face antitrust lawsuit over debit card interchange fees Visa and Mastercard face a sweeping antitrust lawsuit over debit interchange fees, with regulators seeking structural remedies.",
+  "url": "https://example.com/ft-visa-ma-antitrust",
+  "sentiment": -0.9217,
+  "event_type": "Regulatory/Legal",
+  "impact": 8.0,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "V",
+    "name": "Visa",
+    "sector": "Financials"
+   },
+   {
+    "ticker": "MA",
+    "name": "Mastercard",
+    "sector": "Financials"
+   }
+  ],
+  "matched_keywords": [
+   "antitrust",
+   "regulators",
+   "lawsuit"
+  ],
+  "impact_drivers": [
+   "base 5 (Regulatory/Legal)",
+   "+1 magnitude (record/massive)",
+   "+1 strongly negative sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380257_s026",
+  "ts": 1791641380.2574599,
+  "item_id": "s026",
+  "source": "social",
+  "source_name": "X (Twitter) - @credit_crunch",
+  "text": "BofA setting aside another $1.2B for subprime defaults. Consumer is cracking. Watch the credit card data closely $BAC",
+  "url": "https://x.com/credit_crunch/status/26",
+  "sentiment": -0.8126,
+  "event_type": "Credit Event",
+  "impact": 8.0,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "BAC",
+    "name": "Bank of America",
+    "sector": "Financials"
+   }
+  ],
+  "matched_keywords": [
+   "defaults",
+   "subprime"
+  ],
+  "impact_drivers": [
+   "base 7 (Credit Event)",
+   "+1 strongly negative sentiment"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380258_n026",
+  "ts": 1791641380.258326,
+  "item_id": "n026",
+  "source": "news",
+  "source_name": "Bloomberg",
+  "text": "Bank of America warns of rising consumer loan defaults among subprime borrowers Bank of America warned of rising consumer loan defaults among subprime borrowers as household savings dwindle, setting aside an extra $1.2 billion provision.",
+  "url": "https://example.com/bloomberg-bac-defaults",
+  "sentiment": -0.959,
+  "event_type": "Credit Event",
+  "impact": 8.0,
+  "sentiment_label": "negative",
+  "companies": [
+   {
+    "ticker": "BAC",
+    "name": "Bank of America",
+    "sector": "Financials"
+   }
+  ],
+  "matched_keywords": [
+   "defaults",
+   "subprime",
+   "provision"
+  ],
+  "impact_drivers": [
+   "base 7 (Credit Event)",
+   "+1 strongly negative sentiment"
+  ],
+  "risk_flag": "high",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380258_s027",
+  "ts": 1791641380.258792,
+  "item_id": "s027",
+  "source": "social",
+  "source_name": "X (Twitter) - @cloud_curious",
+  "text": "Google's new TPU claims 3x performance. If real, that is a massive shot at Nvidia. Cloud summit was a banger $GOOGL $NVDA",
+  "url": "https://x.com/cloud_curious/status/27",
+  "sentiment": 0.4939,
+  "event_type": "Other",
+  "impact": 4.5,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "NVDA",
+    "name": "Nvidia",
+    "sector": "Technology"
+   },
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "sector": "Technology"
+   }
+  ],
+  "matched_keywords": [],
+  "impact_drivers": [
+   "base 2.5 (Other)",
+   "+1 magnitude (record/massive)",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380259_n027",
+  "ts": 1791641380.2594812,
+  "item_id": "n027",
+  "source": "news",
+  "source_name": "CNBC",
+  "text": "Alphabet's Google debuts next-gen AI chip for data centers at cloud summit Google debuted its next-generation tensor processing unit for data centers at its cloud summit, claiming a 3x performance leap over rivals.",
+  "url": "https://example.com/cnbc-google-tpu",
+  "sentiment": 0.3818,
+  "event_type": "Product Launch",
+  "impact": 3.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "GOOGL",
+    "name": "Alphabet",
+    "sector": "Technology"
+   }
+  ],
+  "matched_keywords": [
+   "debuts",
+   "next-generation",
+   "next-gen"
+  ],
+  "impact_drivers": [
+   "base 3 (Product Launch)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380259_s028",
+  "ts": 1791641380.259903,
+  "item_id": "s028",
+  "source": "social",
+  "source_name": "X (Twitter) - @value_menu",
+  "text": "McDonald's global value menu expansion + Asia traffic rebound. Simple business, great execution. $MCD steady as always \ud83c\udf5f",
+  "url": "https://x.com/value_menu/status/28",
+  "sentiment": 0.9287,
+  "event_type": "Other",
+  "impact": 4.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "MCD",
+    "name": "McDonald's",
+    "sector": "Consumer"
+   }
+  ],
+  "matched_keywords": [],
+  "impact_drivers": [
+   "base 2.5 (Other)",
+   "+1 magnitude (record/massive)",
+   "-0.5 strongly positive sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380260_n028",
+  "ts": 1791641380.260609,
+  "item_id": "n028",
+  "source": "news",
+  "source_name": "Reuters",
+  "text": "McDonald's expands value menu globally as traffic rebounds in Asia McDonald's announced a global expansion of its value menu as store traffic rebounded strongly across Asia, and reaffirmed full-year guidance.",
+  "url": "https://example.com/reuters-mcd-value",
+  "sentiment": 0.9022,
+  "event_type": "Product Launch",
+  "impact": 4.5,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "MCD",
+    "name": "McDonald's",
+    "sector": "Consumer"
+   }
+  ],
+  "matched_keywords": [
+   "announced a"
+  ],
+  "impact_drivers": [
+   "base 3 (Product Launch)",
+   "+1 magnitude (record/massive)",
+   "-0.5 strongly positive sentiment",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380261_s029",
+  "ts": 1791641380.261072,
+  "item_id": "s029",
+  "source": "social",
+  "source_name": "X (Twitter) - @gossip_growth",
+  "text": "not sure why everyone is bullish, the consumer is clearly weakening. Walmart and McDonald's wins are defensive not bullish",
+  "url": "https://x.com/gossip_growth/status/29",
+  "sentiment": 0.5207,
+  "event_type": "Macroeconomic",
+  "impact": 7.0,
+  "sentiment_label": "positive",
+  "companies": [
+   {
+    "ticker": "MCD",
+    "name": "McDonald's",
+    "sector": "Consumer"
+   },
+   {
+    "ticker": "WMT",
+    "name": "Walmart",
+    "sector": "Consumer"
+   }
+  ],
+  "matched_keywords": [
+   "consumer"
+  ],
+  "impact_drivers": [
+   "base 6 (Macroeconomic)",
+   "+1 broad scope (multi-company / sector-wide)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ },
+ {
+  "signal_id": "sig_1791641380261_s030",
+  "ts": 1791641380.261615,
+  "item_id": "s030",
+  "source": "social",
+  "source_name": "X (Twitter) - @macro_musing",
+  "text": "Interesting stat: unemployment claims ticked up but job growth stays solid. Macro picture is genuinely confusing right now. Humbling.",
+  "url": "https://x.com/macro_musing/status/30",
+  "sentiment": 0.5267,
+  "event_type": "Macroeconomic",
+  "impact": 6.0,
+  "sentiment_label": "positive",
+  "companies": [],
+  "matched_keywords": [
+   "unemployment",
+   "macro"
+  ],
+  "impact_drivers": [
+   "base 6 (Macroeconomic)"
+  ],
+  "risk_flag": "none",
+  "ts_iso": "2026-10-10 19:39:40"
+ }
+]

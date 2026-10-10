@@ -1,0 +1,252 @@
+{
+  "id": "n001",
+  "source": "news",
+  "source_name": "Reuters",
+  "title": "Fed signals 50 basis point rate cut as inflation cools to 2.4%",
+  "text": "The Federal Reserve signaled a larger than expected interest rate cut after new data showed inflation cooled to 2.4%, boosting hopes of a soft landing for the economy.",
+  "url": "https://example.com/reuters-fed-cut",
+  "published_at": "2026-10-09T09:15:00Z"
+}
+{
+  "id": "n002",
+  "source": "news",
+  "source_name": "Bloomberg",
+  "title": "BREAKING: Microsoft to acquire cybersecurity startup SecureNova for $12 billion",
+  "text": "Microsoft announced a $12 billion acquisition of cybersecurity firm SecureNova, its largest deal this year, as it races to expand enterprise security offerings.",
+  "url": "https://example.com/bloomberg-msft-acquisition",
+  "published_at": "2026-10-09T08:40:00Z"
+}
+{
+  "id": "n003",
+  "source": "news",
+  "source_name": "CNBC",
+  "title": "Nvidia shares surge 8% after record data-center revenue beats estimates",
+  "text": "Nvidia reported record data-center revenue that crushed analyst estimates, sending shares up 8% in early trading as AI chip demand shows no signs of slowing.",
+  "url": "https://example.com/cnbc-nvda-earnings",
+  "published_at": "2026-10-09T07:55:00Z"
+}
+{
+  "id": "n004",
+  "source": "news",
+  "source_name": "Reuters",
+  "title": "OPEC+ surprise production cut escalates trade tensions with Washington",
+  "text": "OPEC+ announced a surprise oil production cut of 1 million barrels per day, escalating geopolitical tensions with Washington and sending crude prices up 5%.",
+  "url": "https://example.com/reuters-opec-cut",
+  "published_at": "2026-10-09T07:10:00Z"
+}
+{
+  "id": "n005",
+  "source": "news",
+  "source_name": "Financial Times",
+  "title": "Regional lender Pacific Crest Bank files for Chapter 11 bankruptcy",
+  "text": "Pacific Crest Bank filed for Chapter 11 bankruptcy protection after a failed recapitalization, in the largest regional bank failure since 2023. Regulators are monitoring contagion risk.",
+  "url": "https://example.com/ft-bankruptcy",
+  "published_at": "2026-10-09T06:30:00Z"
+}
+{
+  "id": "n006",
+  "source": "news",
+  "source_name": "WSJ",
+  "title": "Apple unveils iPhone 17 Pro with on-device AI, orders up 30% on launch day",
+  "text": "Apple unveiled the iPhone 17 Pro featuring on-device AI models, with pre-orders up 30% versus last year on launch day, easing concerns about a slow product cycle.",
+  "url": "https://example.com/wsj-apple-launch",
+  "published_at": "2026-10-08T21:05:00Z"
+}
+{
+  "id": "n007",
+  "source": "news",
+  "source_name": "Reuters",
+  "title": "Goldman Sachs and Morgan Stanley face DOJ probe over bond trading practices",
+  "text": "The Department of Justice opened an investigation into bond trading practices at Goldman Sachs and Morgan Stanley, examining whether traders misled clients on bond prices.",
+  "url": "https://example.com/reuters-gs-probe",
+  "published_at": "2026-10-08T18:20:00Z"
+}
+{
+  "id": "n008",
+  "source": "news",
+  "source_name": "Bloomberg",
+  "title": "Boeing supplier Spirit AeroSystems warns of supply chain disruption into 2027",
+  "text": "Spirit AeroSystems warned of extended supply chain disruption that could delay Boeing 737 production into 2027, citing shortages of critical fuselage parts.",
+  "url": "https://example.com/bloomberg-boeing-supply",
+  "published_at": "2026-10-08T16:45:00Z"
+}
+{
+  "id": "n009",
+  "source": "news",
+  "source_name": "CNBC",
+  "title": "Amazon announces record Prime Day sales, beats guidance by $4 billion",
+  "text": "Amazon announced record Prime Day sales beating its own guidance by $4 billion, with strong growth in advertising revenue and third-party seller services.",
+  "url": "https://example.com/cnbc-amazon-prime",
+  "published_at": "2026-10-08T15:30:00Z"
+}
+{
+  "id": "n010",
+  "source": "news",
+  "source_name": "Reuters",
+  "title": "SEC charges Tesla with disclosure failures over autonomous driving claims",
+  "text": "The SEC charged Tesla with disclosure failures regarding its autonomous driving claims, alleging the company overstated capability timelines to investors. Shares slipped 3%.",
+  "url": "https://example.com/reuters-tesla-sec",
+  "published_at": "2026-10-08T14:50:00Z"
+}
+{
+  "id": "n011",
+  "source": "news",
+  "source_name": "Financial Times",
+  "title": "US slaps fresh sanctions on chip exports, hitting Nvidia and AMD sales in China",
+  "text": "The US imposed fresh export sanctions on advanced AI chips to China, dealing a blow to Nvidia and AMD sales in one of their largest markets amid rising geopolitical conflict.",
+  "url": "https://example.com/ft-chip-sanctions",
+  "published_at": "2026-10-08T13:15:00Z"
+}
+{
+  "id": "n012",
+  "source": "news",
+  "source_name": "Bloomberg",
+  "title": "Johnson & Johnson wins major lawsuit over talc claims, shares rally",
+  "text": "Johnson & Johnson won a major court ruling over talc litigation claims, removing a key legal overhang and sending shares up 4% in afternoon trading.",
+  "url": "https://example.com/bloomberg-jnj-lawsuit",
+  "published_at": "2026-10-08T11:40:00Z"
+}
+{
+  "id": "n013",
+  "source": "news",
+  "source_name": "Reuters",
+  "title": "Walmart raises full-year forecast as discounting wins over high-income shoppers",
+  "text": "Walmart raised its full-year profit forecast, saying gains with higher-income households continued even as inflation pressures ease for consumers.",
+  "url": "https://example.com/reuters-walmart-forecast",
+  "published_at": "2026-10-08T10:25:00Z"
+}
+{
+  "id": "n014",
+  "source": "news",
+  "source_name": "CNBC",
+  "title": "Caterpillar profit warning: construction slowdown drags Q3 revenue lower",
+  "text": "Caterpillar issued a profit warning as a construction slowdown dragged quarterly revenue lower, with dealers reporting shrinking order backlogs.",
+  "url": "https://example.com/cnbc-cat-warning",
+  "published_at": "2026-10-08T09:30:00Z"
+}
+{
+  "id": "n015",
+  "source": "news",
+  "source_name": "WSJ",
+  "title": "Exxon Mobil pledges $20 billion expansion in Gulf coast refining",
+  "text": "Exxon Mobil announced a $20 billion expansion of Gulf coast refining and chemical operations, calling it a major growth investment despite energy transition headwinds.",
+  "url": "https://example.com/wsj-xom-expansion",
+  "published_at": "2026-10-07T20:10:00Z"
+}
+{
+  "id": "n016",
+  "source": "news",
+  "source_name": "Reuters",
+  "title": "Global market selloff: stocks plunge as recession fears grip investors",
+  "text": "A global market selloff intensified as stocks plunged on recession fears, with volatility spiking to its highest level in eighteen months.",
+  "url": "https://example.com/reuters-selloff",
+  "published_at": "2026-10-07T18:55:00Z"
+}
+{
+  "id": "n017",
+  "source": "news",
+  "source_name": "Bloomberg",
+  "title": "Moody's downgrades Chevron credit rating on weak cash flow outlook",
+  "text": "Moody's downgraded Chevron's credit rating by one notch, citing a weak cash flow outlook and rising debt, in a surprise move for the oil major.",
+  "url": "https://example.com/bloomberg-chevron-downgrade",
+  "published_at": "2026-10-07T17:20:00Z"
+}
+{
+  "id": "n018",
+  "source": "news",
+  "source_name": "CNBC",
+  "title": "Meta unveils compact AR glasses at developer conference, stock jumps",
+  "text": "Meta unveiled compact augmented reality glasses at its developer conference to strong reviews, and the stock jumped 5% as analysts flagged a new growth frontier.",
+  "url": "https://example.com/cnbc-meta-ar",
+  "published_at": "2026-10-07T16:00:00Z"
+}
+{
+  "id": "n019",
+  "source": "news",
+  "source_name": "Financial Times",
+  "title": "Coca-Cola recall: contamination scare triggers nationwide product recall",
+  "text": "Coca-Cola issued a nationwide recall of select beverage batches after a contamination scare, a rare quality crisis for the consumer giant.",
+  "url": "https://example.com/ft-ko-recall",
+  "published_at": "2026-10-07T14:35:00Z"
+}
+{
+  "id": "n020",
+  "source": "news",
+  "source_name": "Reuters",
+  "title": "Pfizer wins FDA approval for breakthrough cancer therapy",
+  "text": "Pfizer won FDA approval for its breakthrough cancer therapy after a record-fast review, a major win for its oncology pipeline.",
+  "url": "https://example.com/reuters-pfizer-fda",
+  "published_at": "2026-10-07T13:05:00Z"
+}
+{
+  "id": "n021",
+  "source": "news",
+  "source_name": "WSJ",
+  "title": "Massive ransomware attack disrupts operations at major US banks",
+  "text": "A massive ransomware attack disrupted wire operations at several major US banks, exposing cybersecurity weaknesses across the financial sector.",
+  "url": "https://example.com/wsj-banks-ransomware",
+  "published_at": "2026-10-07T11:45:00Z"
+}
+{
+  "id": "n022",
+  "source": "news",
+  "source_name": "Bloomberg",
+  "title": "JPMorgan reports record quarterly profit, lifts dividend and buyback",
+  "text": "JPMorgan reported record quarterly profit on strong trading and lending revenue, lifting its dividend and announcing a $30 billion share buyback.",
+  "url": "https://example.com/bloomberg-jpm-results",
+  "published_at": "2026-10-07T10:20:00Z"
+}
+{
+  "id": "n023",
+  "source": "news",
+  "source_name": "CNBC",
+  "title": "Disney+ subscriber growth accelerates, streaming turns first full-year profit",
+  "text": "Disney+ subscriber growth accelerated and the streaming business turned its first full-year profit, easing pressure on CEO succession plans.",
+  "url": "https://example.com/cnbc-disney-streaming",
+  "published_at": "2026-10-07T09:00:00Z"
+}
+{
+  "id": "n024",
+  "source": "news",
+  "source_name": "Reuters",
+  "title": "Trump administration proposes sweeping tariffs on European auto imports",
+  "text": "The administration proposed sweeping tariffs of up to 25% on European auto imports, escalating trade conflict with the EU and pressuring global automakers.",
+  "url": "https://example.com/reuters-eu-tariffs",
+  "published_at": "2026-10-06T19:40:00Z"
+}
+{
+  "id": "n025",
+  "source": "news",
+  "source_name": "Financial Times",
+  "title": "Visa and Mastercard face antitrust lawsuit over debit card interchange fees",
+  "text": "Visa and Mastercard face a sweeping antitrust lawsuit over debit interchange fees, with regulators seeking structural remedies.",
+  "url": "https://example.com/ft-visa-ma-antitrust",
+  "published_at": "2026-10-06T17:10:00Z"
+}
+{
+  "id": "n026",
+  "source": "news",
+  "source_name": "Bloomberg",
+  "title": "Bank of America warns of rising consumer loan defaults among subprime borrowers",
+  "text": "Bank of America warned of rising consumer loan defaults among subprime borrowers as household savings dwindle, setting aside an extra $1.2 billion provision.",
+  "url": "https://example.com/bloomberg-bac-defaults",
+  "published_at": "2026-10-06T15:25:00Z"
+}
+{
+  "id": "n027",
+  "source": "news",
+  "source_name": "CNBC",
+  "title": "Alphabet's Google debuts next-gen AI chip for data centers at cloud summit",
+  "text": "Google debuted its next-generation tensor processing unit for data centers at its cloud summit, claiming a 3x performance leap over rivals.",
+  "url": "https://example.com/cnbc-google-tpu",
+  "published_at": "2026-10-06T13:50:00Z"
+}
+{
+  "id": "n028",
+  "source": "news",
+  "source_name": "Reuters",
+  "title": "McDonald's expands value menu globally as traffic rebounds in Asia",
+  "text": "McDonald's announced a global expansion of its value menu as store traffic rebounded strongly across Asia, and reaffirmed full-year guidance.",
+  "url": "https://example.com/reuters-mcd-value",
+  "published_at": "2026-10-06T12:30:00Z"
+}

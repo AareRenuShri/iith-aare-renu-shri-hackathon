@@ -1,0 +1,39 @@
+position_id,asset_class,sub_type,counterparty,sector,notional_musd,rating,duration_years,credit_spread_bp,direction,notes
+LN-001,Corporate Loan,Term Loan A,Apex Industrial Corp,Manufacturing,150,BBB+,4.5,220,,Senior secured
+LN-002,Corporate Loan,Term Loan B,Apex Industrial Corp,Manufacturing,100,BB+,6.0,450,,Subordinated
+LN-003,Corporate Loan,Revolving Credit Facility,Nimbus Retail Group,Consumer,75,A-,1.0,180,,Undrawn 40%
+LN-004,Corporate Loan,Term Loan A,Helios Energy Partners,Energy,200,BBB,5.0,250,,Oil & gas producer
+LN-005,Corporate Loan,Project Finance,Atlantis Offshore Wind,Utilities,300,BBB+,8.0,300,,Offshore wind farm
+LN-006,Corporate Loan,Term Loan A,Cobalt Systems Inc,Technology,120,BB,4.0,400,,Semiconductor equipment
+LN-007,Corporate Loan,Leveraged Loan,Velocity Media Holdings,Media,90,B,5.5,650,,High leverage 7.2x
+LN-008,Corporate Loan,Leveraged Loan,Sapphire Healthcare Group,Healthcare,110,B+,5.0,580,,LBO 2024
+LN-009,CRE Loan,Office Mortgage,Grand Central Tower REIT,Real Estate,180,BB+,6.5,350,,NYC Class B office
+LN-010,CRE Loan,Logistics Warehouse,Meridian Logistics Parks,Real Estate,140,A-,5.0,200,,Industrial parks
+LN-011,CRE Loan,Retail Mortgage,Sunbelt Retail Centers,Real Estate,95,BBB-,5.5,300,,Grocery anchored
+LN-012,Corporate Loan,Shipping Loan,Pacific Rim Shipping,Transport,130,BB,4.0,480,,Container vessels
+LN-013,Corporate Loan,Term Loan A,Quantum Motors Finance,Auto Finance,160,BBB+,3.5,240,,Captive finance arm
+LN-014,Corporate Loan,Commodity Trade Finance,Meridian Commodities SA,Commodities,85,BBB,0.5,160,,Short-term revolving
+LN-015,Corporate Loan,Aircraft Finance,Skybridge Aviation Leasing,Transport,105,A-,7.0,210,,Fleet financing
+GB-001,Government Bond,US Treasury 10Y,US Government,Sovereign,400,AAA,9.2,0,,Benchmark holding
+GB-002,Government Bond,US Treasury 30Y,US Government,Sovereign,250,AAA,18.5,0,,Long end
+GB-003,Government Bond,German Bund 10Y,German Government,Sovereign,180,AAA,8.8,5,,EUR exposure
+GB-004,Government Bond,US TIPS 10Y,US Government,Sovereign,120,AA+,9.0,10,,Inflation linked
+CB-001,Corporate Bond,Investment Grade,Stellar Telecom Inc,Telecom,150,A,6.8,120,,Fixed rate senior
+CB-002,Corporate Bond,Investment Grade,Falcon Airlines Group,Transport,100,BBB,6.0,180,,Unsecured senior
+CB-003,Corporate Bond,Investment Grade,Pinnacle Software Corp,Technology,130,AA,7.2,85,,Buyback funded
+CB-004,Corporate Bond,High Yield,Velocity Media Holdings,Media,70,B,5.0,520,,Same group as LN-007
+CB-005,Corporate Bond,High Yield,Redwood Franchise Co,Consumer,60,B+,4.5,460,,Restaurant franchisee
+CB-006,Corporate Bond,High Yield,Helios Energy Partners,Energy,80,BB+,5.5,400,,Same group as LN-004
+CB-007,Corporate Bond,Financial,Bridge Financial Corp,Banks,110,A-,5.5,150,,Bank senior non-preferred
+MB-001,Mortgage Bond,Agency MBS Pass-Through,Fannie Mae Pool,Residential,300,AA+,5.8,35,,15yr conv. 3.5%
+MB-002,Mortgage Bond,Agency CMBS,Freddie K-084 Pool,Commercial,200,AA,6.2,55,,Multifamily
+DR-001,Derivative,Interest Rate Swap (Pay Fixed),Apex Industrial Corp,Manufacturing,200,BBB+,4.5,0,pay_fixed,Hedging client float
+DR-002,Derivative,Interest Rate Swap (Receive Fixed),Helios Energy Partners,Energy,150,BBB,4.0,0,receive_fixed,Client hedging
+DR-003,Derivative,Cross-Currency Swap,Bridge Financial Corp,Banks,100,A-,3.0,30,receive_fixed,USD/EUR
+DR-004,Derivative,Equity Index Forward (Long),S&P 500 Index,Index,120,n/a,0.0,0,long,Mark-to-market exposure
+DR-005,Derivative,Credit Default Swap (Sold),Stellar Telecom Inc,Telecom,80,A,5.0,120,sold_cds,Single-name protection sold
+DR-006,Derivative,Interest Rate Swap (Pay Fixed),Nimbus Retail Group,Consumer,90,A-,3.5,0,pay_fixed,Hedging client float
+CM-001,Loan Commitment,Undrawn RCF Commitment,Quantum Motors Finance,Auto Finance,100,BBB+,1.0,90,,Commitment fee basis
+CM-002,Loan Commitment,Undrawn RCF Commitment,Pinnacle Software Corp,Technology,80,AA,1.0,70,,Strong covenant
+EQ-001,Direct Equity,Listed Equity Portfolio,S&P 500 Large Cap Basket,Equity Market,150,n/a,0.0,0,long,Bank treasury strategic
+EQ-002,Direct Equity,Private Equity Fund LP,Growth Fund IV,Private Markets,100,n/a,0.0,0,long,10-year fund

@@ -1,0 +1,11 @@
+# ---------------------------------------------------------------------------
+# RiskRadar - dependencies
+# Core stack is deliberately light: everything runs on a plain laptop with no
+# GPU, no API keys and no internet (live connectors activate only if a key is
+# provided). Python 3.9+
+# ---------------------------------------------------------------------------
+flask>=3.0
+requests>=2.31
+vaderSentiment>=3.3.2
+numpy>=1.26
+matplotlib>=3.8

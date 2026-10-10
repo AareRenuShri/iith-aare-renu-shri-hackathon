@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RiskRadar — Live Dashboard</title>
+<script src="plotly.min.js"></script>
+<style>
+  :root{
+    --bg:#0b1220; --panel:#111a2c; --panel2:#0e1626; --line:#1e2a44;
+    --txt:#dbe4f3; --dim:#8496b3; --acc:#4da3ff; --pos:#2ecc8f; --neg:#ff5d73;
+    --warn:#ffb454; --chip:#16233a;
+  }
+  *{box-sizing:border-box; margin:0; padding:0}
+  body{background:var(--bg); color:var(--txt);
+       font-family:-apple-system,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       font-size:14px; padding-bottom:60px}
+  header{display:flex; align-items:center; gap:14px; padding:16px 22px;
+         border-bottom:1px solid var(--line); position:sticky; top:0;
+         background:rgba(11,18,32,.92); backdrop-filter:blur(6px); z-index:10}
+  .logo{width:34px;height:34px;border-radius:9px;
+        background:conic-gradient(from 210deg,#4da3ff,#2ecc8f 40%,#ff5d73 75%,#4da3ff);
+        display:inline-block; position:relative}
+  .logo:after{content:"";position:absolute;inset:8px;background:var(--bg);border-radius:50%}
+  .logo:before{content:"";position:absolute;inset:0;margin:auto;width:6px;height:6px;
+               background:#4da3ff;border-radius:50%;box-shadow:0 0 8px #4da3ff}
+  h1{font-size:17px; font-weight:650; letter-spacing:.2px}
+  .sub{color:var(--dim); font-size:12px; margin-top:1px}
+  .live{margin-left:auto; display:flex; align-items:center; gap:8px;
+        color:var(--pos); font-size:12px; font-weight:600}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--pos);
+       animation:pulse 1.6s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,204,143,.5)}
+                   70%{box-shadow:0 0 0 7px rgba(46,204,143,0)}
+                   100%{box-shadow:0 0 0 0 rgba(46,204,143,0)}}
+  nav{display:flex; gap:6px; padding:12px 22px 0}
+  nav button{background:var(--panel2); border:1px solid var(--line); color:var(--dim);
+             padding:8px 16px; border-radius:8px 8px 0 0; cursor:pointer; font-size:13px;
+             font-weight:600}
+  nav button.active{background:var(--panel); color:var(--txt); border-bottom-color:var(--panel)}
+  main{padding:18px 22px}
+  .cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin-bottom:16px}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 16px}
+  .card .k{color:var(--dim); font-size:11.5px; text-transform:uppercase; letter-spacing:.8px}
+  .card .v{font-size:26px; font-weight:700; margin-top:4px}
+  .card .s{color:var(--dim); font-size:11.5px; margin-top:2px}
+  .grid{display:grid; gap:14px}
+  .g2{grid-template-columns:1fr 1fr} .g3{grid-template-columns:2fr 1fr}
+  @media(max-width:1050px){.g2,.g3{grid-template-columns:1fr}}
+  .panel{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px}
+  .panel h3{font-size:13px; font-weight:650; color:var(--dim); margin-bottom:10px;
+            text-transform:uppercase; letter-spacing:.7px}
+  .chart{width:100%; min-height:260px}
+  table{width:100%; border-collapse:collapse; font-size:12.5px}
+  th{color:var(--dim); text-align:left; font-weight:600; padding:6px 8px;
+     border-bottom:1px solid var(--line); position:sticky; top:0; background:var(--panel)}
+  td{padding:7px 8px; border-bottom:1px solid rgba(30,42,68,.55); vertical-align:top}
+  tr:hover td{background:rgba(77,163,255,.05)}
+  .feed{max-height:430px; overflow:auto}
+  .tag{display:inline-block; padding:2px 8px; border-radius:20px; font-size:11px;
+       font-weight:600; background:var(--chip); border:1px solid var(--line)}
+  .pos{color:var(--pos)} .neg{color:var(--neg)} .neu{color:var(--warn)}
+  .high{color:#fff; background:#5c1626; border-color:#a1304a}
+  .watch{color:#ffd9a8; background:#3a2a12; border-color:#6b4d1e}
+  .ev{color:#a8c7ff}
+  .txt{color:var(--dim); max-width:520px}
+  .src{color:var(--dim); font-size:11px; white-space:nowrap}
+  .impact{font-weight:700}
+  .inject{display:flex; gap:8px; margin-top:8px}
+  .inject input{flex:1; background:var(--panel2); border:1px solid var(--line);
+                border-radius:8px; color:var(--txt); padding:9px 12px; font-size:13px}
+  .inject button{background:var(--acc); color:#06101f; border:none; border-radius:8px;
+                 padding:9px 16px; font-weight:700; cursor:pointer}
+  .inject button:hover{filter:brightness(1.1)}
+  #inject-result{margin-top:10px; font-size:12.5px; color:var(--dim); display:none;
+                 background:var(--panel2); border:1px solid var(--line);
+                 border-radius:8px; padding:10px 12px}
+  .ghost{color:var(--dim); padding:24px; text-align:center; font-size:13px}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:12px}
+  footer{position:fixed; bottom:0; left:0; right:0; background:rgba(11,18,32,.95);
+         border-top:1px solid var(--line); padding:9px 22px; color:var(--dim);
+         font-size:11.5px; display:flex; gap:18px}
+  .hidden{display:none}
+  .kv{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px}
+  .kv .chip{background:var(--chip); border:1px solid var(--line); border-radius:8px;
+            padding:6px 10px; font-size:12px}
+  .kv .chip b{color:var(--txt)} .kv .chip{color:var(--dim)}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="logo"></span>
+  <div>
+    <h1>RiskRadar</h1>
+    <div class="sub">AI/NLP Risk Engine → Index Rebalancing (A) &nbsp;+&nbsp; Portfolio Stress Testing (B)</div>
+  </div>
+  <div class="live"><span class="dot"></span> LIVE &nbsp;·&nbsp; <span id="last-upd">connecting…</span></div>
+</header>
+
+<nav>
+  <button id="tab-engine" class="active" onclick="showTab('engine')">① Risk Engine</button>
+  <button id="tab-a" onclick="showTab('a')">② Module A · Index Rebalancing</button>
+  <button id="tab-b" onclick="showTab('b')">③ Module B · Stress Testing</button>
+</nav>
+
+<main>
+  <!-- ================= ENGINE ================= -->
+  <section id="view-engine">
+    <div class="cards">
+      <div class="card"><div class="k">Signals processed</div><div class="v" id="c-processed">0</div><div class="s" id="c-provider">…</div></div>
+      <div class="card"><div class="k">Avg sentiment</div><div class="v" id="c-sent">–</div><div class="s">recent window</div></div>
+      <div class="card"><div class="k">High-risk alerts</div><div class="v neg" id="c-high">0</div><div class="s">impact ≥ 7 & negative</div></div>
+      <div class="card"><div class="k">Watch list</div><div class="v" style="color:var(--warn)" id="c-watch">0</div><div class="s">impact ≥ 5 & negative</div></div>
+    </div>
+
+    <div class="grid g3">
+      <div class="panel">
+        <h3>Live signal feed <span class="src">(structured output — JSON)</span></h3>
+        <div class="feed">
+          <table id="signal-table">
+            <thead><tr><th>Time</th><th>Text</th><th>Sentiment</th><th>Event</th><th style="text-align:center">Impact</th><th>Companies</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <div class="panel" style="margin-bottom:14px">
+          <h3>Events by type</h3>
+          <div id="chart-events" class="chart" style="min-height:220px"></div>
+        </div>
+        <div class="panel">
+          <h3>Sentiment by source</h3>
+          <div id="chart-sources" class="chart" style="min-height:200px"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:14px">
+      <h3>Try it live — type any headline, the engine will analyze it right now</h3>
+      <div class="inject">
+        <input id="inject-text" placeholder='e.g. "BREAKING: Massive layoffs at Tesla as demand collapses"'/>
+        <button onclick="inject()">Analyze →</button>
+      </div>
+      <div id="inject-result"></div>
+    </div>
+  </section>
+
+  <!-- ================= MODULE A ================= -->
+  <section id="view-a" class="hidden">
+    <div class="cards">
+      <div class="card"><div class="k">Index size</div><div class="v" id="a-size">20</div><div class="s">S&P 100 subset</div></div>
+      <div class="card"><div class="k">Signals used</div><div class="v" id="a-used">0</div><div class="s">drove rebalancing</div></div>
+      <div class="card"><div class="k">Rule</div><div class="v" style="font-size:15px">w·(1+0.25·s)</div><div class="s">clamp 2–12%, renormalize</div></div>
+      <div class="card"><div class="k">Max weight</div><div class="v" id="a-max">–</div><div class="s">position limit</div></div>
+    </div>
+    <div class="grid g2">
+      <div class="panel">
+        <h3>Current index weights</h3>
+        <div id="chart-weights" class="chart"></div>
+      </div>
+      <div class="panel">
+        <h3>Weights over time (top 8 by current weight)</h3>
+        <div id="chart-history" class="chart"></div>
+      </div>
+    </div>
+    <div class="panel" style="margin-top:14px">
+      <h3>Rebalance audit trail <span class="src">(old weight → new weight, with the sentiment that caused it)</span></h3>
+      <div class="feed">
+        <table id="a-log">
+          <thead><tr><th>Time</th><th>Ticker</th><th>Sentiment</th><th>Event</th><th>Impact</th><th>Weight</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MODULE B ================= -->
+  <section id="view-b" class="hidden">
+    <div class="cards">
+      <div class="card"><div class="k">Portfolio value</div><div class="v" id="b-value">$0</div><div class="s" id="b-pos-count">positions</div></div>
+      <div class="card"><div class="k">Stress tests run</div><div class="v" id="b-tests">0</div><div class="s">trigger: impact ≥ 7</div></div>
+      <div class="card"><div class="k">Last scenario</div><div class="v" style="font-size:15px" id="b-scenario">–</div><div class="s" id="b-trigger">awaiting event…</div></div>
+      <div class="card"><div class="k">Estimated loss</div><div class="v neg" id="b-loss">–</div><div class="s" id="b-losspct"></div></div>
+    </div>
+    <div class="grid g3">
+      <div class="panel">
+        <h3>Portfolio value — before vs after shock</h3>
+        <div id="chart-ba" class="chart"></div>
+      </div>
+      <div>
+        <div class="panel" style="margin-bottom:14px">
+          <h3>P&L by asset class</h3>
+          <div id="chart-pnl" class="chart" style="min-height:220px"></div>
+        </div>
+        <div class="panel">
+          <h3>Portfolio composition</h3>
+          <div id="chart-comp" class="chart" style="min-height:200px"></div>
+        </div>
+      </div>
+    </div>
+    <div class="panel" style="margin-top:14px">
+      <h3>Worst-hit positions in the last stress test</h3>
+      <table id="b-positions">
+        <thead><tr><th>Position</th><th>Asset class</th><th>Counterparty</th><th>Notional ($m)</th><th>P&L ($m)</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>RiskRadar · Phase 3 case study</span>
+  <span id="f-sources">sources: …</span>
+  <span id="f-store">signals → SQLite + signals.jsonl</span>
+</footer>
+
+<script>
+const API = "";
+let currentTab = "engine";
+const PL = {responsive:true, displayModeBar:false};
+const PAPER = {paper_bgcolor:"#111a2c", plot_bgcolor:"#111a2c",
+               font:{color:"#8496b3", size:11}, margin:{l:50,r:20,t:10,b:40}};
+
+function showTab(t){
+  currentTab = t;
+  for (const x of ["engine","a","b"]) document.getElementById("view-"+x).classList.toggle("hidden", x!==t);
+  for (const x of ["engine","a","b"]) document.getElementById("tab-"+x).classList.toggle("active", x===t);
+}
+function esc(s){const d=document.createElement("div"); d.textContent=s; return d.innerHTML;}
+function now(){return new Date().toLocaleTimeString();}
+function cls(v){return v>0.15?"pos":(v<-0.15?"neg":"neu");}
+function fmtImpact(v){return v>=7?`<span class="neg impact">${v}</span>`:(v>=5?`<span class="impact" style="color:var(--warn)">${v}</span>`:`<span class="impact">${v}</span>`);}
+
+async function jget(u){const r=await fetch(u); return r.json();}
+
+/* ---------------- engine view ---------------- */
+function renderEngine(h, s, sigs){
+  document.getElementById("c-processed").textContent = h.processed;
+  document.getElementById("c-provider").textContent = h.provider;
+  document.getElementById("c-sent").textContent = s.avg_sentiment ?? "–";
+  document.getElementById("c-sent").className = "v " + cls(s.avg_sentiment ?? 0);
+  document.getElementById("c-high").textContent = s.high_risk ?? 0;
+  document.getElementById("c-watch").textContent = s.watch ?? 0;
+  document.getElementById("f-sources").textContent = "sources: " +
+    Object.entries(h.sources).map(([k,v])=>`${k} (${v.includes("inactive")?"off":"live"})`).join(", ");
+
+  const tb = document.querySelector("#signal-table tbody");
+  tb.innerHTML = sigs.slice(0,40).map(x=>`
+    <tr>
+      <td class="src">${x.ts_iso.slice(11)}</td>
+      <td class="txt">${esc(x.text)}</td>
+      <td class="${cls(x.sentiment)}"><b>${(x.sentiment>=0?"+":"")+x.sentiment.toFixed(2)}</b></td>
+      <td><span class="tag ev">${esc(x.event_type)}</span></td>
+      <td style="text-align:center">${fmtImpact(x.impact)}</td>
+      <td>${x.companies.map(c=>`<span class="tag mono">${c.ticker}</span>`).join(" ")||'<span class="src">—</span>'}</td>
+    </tr>`).join("");
+
+  const ev = Object.entries(s.by_event||{}).sort((a,b)=>b[1]-a[1]);
+  Plotly.react("chart-events", [{x:ev.map(e=>e[1]), y:ev.map(e=>e[0]),
+      orientation:"h", type:"bar", marker:{color:"#4da3ff"}, text:ev.map(e=>e[1]), textposition:"auto"}],
+    {...PAPER, yaxis:{automargin:true}} , PL);
+
+  const src = Object.entries(s.by_source||{});
+  Plotly.react("chart-sources", [{x:src.map(e=>e[0]), y:src.map(e=>e[1]), type:"bar",
+      marker:{color:["#2ecc8f","#4da3ff","#ffb454"].slice(0,src.length)}}],
+    {...PAPER}, PL);
+}
+
+async function inject(){
+  const input = document.getElementById("inject-text");
+  const text = input.value.trim(); if(!text) return;
+  const box = document.getElementById("inject-result");
+  box.style.display="block"; box.innerHTML="analyzing…";
+  const r = await fetch("/api/inject",{method:"POST",headers:{"Content-Type":"application/json"},
+                                       body:JSON.stringify({text})});
+  const d = await r.json();
+  if(d.error){box.innerHTML=esc(d.error);return;}
+  const s=d.signal;
+  box.innerHTML =
+    `<div class="kv">
+       <span class="chip">sentiment <b class="${cls(s.sentiment)}">${(s.sentiment>=0?"+":"")+s.sentiment.toFixed(3)}</b></span>
+       <span class="chip">event <b>${esc(s.event_type)}</b></span>
+       <span class="chip">impact <b>${s.impact}/10</b></span>
+       <span class="chip">flag <b>${s.risk_flag}</b></span>
+       <span class="chip">Module A rebalanced: <b>${d.module_a_rebalanced?"yes":"no (not an index name)"}</b></span>
+       <span class="chip">Module B stress test: <b>${d.module_b_triggered?"TRIGGERED":"no (<7 impact)"}</b></span>
+     </div>
+     <div class="mono">why impact ${s.impact}: ${esc(s.impact_drivers.join(" | "))}</div>
+     <div class="mono" style="margin-top:4px">why ${esc(s.event_type)}: matched ${esc(s.matched_keywords.join(", ")||"fallback")}</div>`;
+  refresh();
+}
+
+/* ---------------- module A view ---------------- */
+function renderA(a){
+  document.getElementById("a-used").textContent = a.signals_used;
+  const ws = Object.entries(a.weights);
+  document.getElementById("a-max").textContent = (ws[0][1]*100).toFixed(1)+"% "+ws[0][0];
+  Plotly.react("chart-weights", [{x:ws.map(w=>w[0]), y:ws.map(w=>w[1]),
+      type:"bar", marker:{color:ws.map(w=>w[1]>=0.12?"#ffb454":"#4da3ff")},
+      text:ws.map(w=>(w[1]*100).toFixed(1)+"%"), textposition:"auto", textfont:{size:9}}],
+    {...PAPER, xaxis:{tickangle:-45}}, PL);
+
+  const hist = a.history; if(hist.length>1){
+    const top8 = ws.slice(0,8).map(w=>w[0]);
+    const traces = top8.map(tk=>({name:tk, x:hist.map(h=>new Date(h.ts*1000).toLocaleTimeString()),
+      y:hist.map(h=>h.weights[tk]*100), mode:"lines", line:{width:2}}));
+    Plotly.react("chart-history", traces,
+      {...PAPER, yaxis:{title:"weight %"}, showlegend:true,
+       legend:{orientation:"h", y:-0.18, font:{size:9}}}, {...PL, height:300});
+  }
+
+  document.querySelector("#a-log tbody").innerHTML = a.rebalance_log.map(l=>`
+    <tr>
+      <td class="src">${new Date(l.ts*1000).toLocaleTimeString()}</td>
+      <td><span class="tag mono">${l.ticker}</span></td>
+      <td class="${cls(l.sentiment)}"><b>${(l.sentiment>=0?"+":"")+l.sentiment.toFixed(2)}</b></td>
+      <td><span class="tag ev">${esc(l.event_type)}</span></td>
+      <td>${fmtImpact(l.impact)}</td>
+      <td class="mono">${(l.old_w*100).toFixed(2)}% → ${(l.new_w*100).toFixed(2)}%</td>
+    </tr>`).join("");
+}
+
+/* ---------------- module B view ---------------- */
+function renderB(b){
+  document.getElementById("b-value").textContent = "$"+(b.total_value/1000).toFixed(2)+"bn";
+  document.getElementById("b-pos-count").textContent = b.n_positions+" positions";
+  document.getElementById("b-tests").textContent = b.tests_run;
+
+  if(b.last_test){
+    const t=b.last_test;
+    document.getElementById("b-scenario").textContent = t.scenario;
+    document.getElementById("b-trigger").textContent =
+      `trigger: ${t.trigger.event_type} · impact ${t.trigger.impact} · ${t.trigger.source}`;
+    document.getElementById("b-loss").textContent = "–$"+t.total_loss.toFixed(0)+"m";
+    document.getElementById("b-losspct").textContent = t.loss_pct+"% of portfolio";
+    Plotly.react("chart-ba", [{x:["Before","After shock"], y:[t.value_before, t.value_after],
+        type:"bar", marker:{color:["#4da3ff","#ff5d73"]},
+        text:[(t.value_before/1000).toFixed(2)+"bn",(t.value_after/1000).toFixed(2)+"bn"],
+        textposition:"auto"}], {...PAPER}, PL);
+    const pc=Object.entries(t.pnl_by_class);
+    Plotly.react("chart-pnl", [{x:pc.map(e=>e[0]), y:pc.map(e=>e[1]), type:"bar",
+        marker:{color:pc.map(e=>e[1]<0?"#ff5d73":"#2ecc8f")}}],
+      {...PAPER, xaxis:{tickangle:-30}}, PL);
+    document.querySelector("#b-positions tbody").innerHTML = t.top_positions.map(p=>`
+      <tr><td class="mono">${esc(p.position_id)}</td><td>${esc(p.asset_class)}</td>
+      <td>${esc(p.counterparty)}</td><td>${p.notional.toFixed(0)}</td>
+      <td class="neg">${p.pnl.toFixed(1)}</td></tr>`).join("");
+  } else {
+    document.getElementById("b-scenario").textContent = "–";
+    document.getElementById("b-trigger").textContent = "awaiting high-impact event… (impact ≥ 7)";
+    document.getElementById("b-loss").textContent = "–";
+    document.getElementById("b-losspct").textContent = "";
+  }
+  const comp=Object.entries(b.by_class);
+  Plotly.react("chart-comp", [{labels:comp.map(c=>c[0]), values:comp.map(c=>c[1]), type:"pie",
+      hole:.55, textinfo:"percent", textfont:{size:9}}], {...PAPER, showlegend:true,
+      legend:{font:{size:9}, orientation:"h", y:-0.1}}, {...PL, height:240});
+}
+
+/* ---------------- polling loop ---------------- */
+async function refresh(){
+  try{
+    const [h,s,sigs,a,b] = await Promise.all([
+      jget(API+"/api/health"), jget(API+"/api/stats"), jget(API+"/api/signals?limit=40"),
+      jget(API+"/api/module_a"), jget(API+"/api/module_b")]);
+    if(currentTab==="engine") renderEngine(h,s,sigs);
+    if(currentTab==="a") renderA(a);
+    if(currentTab==="b") renderB(b);
+    document.getElementById("last-upd").textContent = "updated "+now();
+  }catch(e){ document.getElementById("last-upd").textContent = "reconnecting…"; }
+}
+setInterval(refresh, 2500); refresh();
+</script>
+</body>
+</html>
