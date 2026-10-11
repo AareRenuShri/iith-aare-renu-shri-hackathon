@@ -1,79 +1,98 @@
-# 5-Minute Live Demo Script
+# Demo Video (≤10 min) & Live Jury Pitch Script
 
-> Setup before the demo: `pip install -r requirements.txt`, then
-> `python run.py --fast`. The dashboard opens automatically.
-> Keep a terminal open next to the browser — it makes the "it's really
-> processing" point for you.
+> Guidelines allow **up to 10 minutes**, suggested flow below lands at ~6 —
+> tight is better than long. Record the screen + mic (QuickTime: File → New
+> Screen Recording, or OBS). **Upload to YouTube as UNLISTED** (not Drive —
+> the guidelines explicitly require YouTube unlisted; verify it plays in an
+> incognito window before submitting).
+>
+> Setup before recording: `pip install -r requirements.txt`, then
+> `python run.py --fast`. Keep a terminal visible next to the browser.
 
 ---
 
-## 0:00 — The pitch (15s)
+## PART A — the recorded video (~6 min, follow the guidelines' flow)
+
+### 0:00–0:30 · Intro (30s)
 
 > "Markets move on news — but news is text, and risk systems only eat
-> numbers. RiskRadar is the bridge: it reads news and social media in
-> real time and converts them into three numbers a machine can act on —
-> sentiment, event type, and impact. Then I built two things that *act*
-> on those numbers."
+> numbers. RiskRadar is the bridge: it reads news and social media in real
+> time and converts them into three numbers a machine can act on —
+> sentiment, event type, and impact. And then two modules act on those
+> numbers: an index rebalancer and a portfolio stress tester. This is
+> running live, entirely offline, on one laptop."
 
-## 0:15 — Risk Engine tab (1 min 15s)
+### 0:30–1:00 · Setup / Run (30s) — show the README commands working
 
-- Point at the **live feed table**: "Every row is a tweet or headline that
-  just got processed. Watch — new ones appear every few seconds."
-- Pick one row, read it aloud, then read its scores:
-  > "This one: sentiment **-0.97**, event **Credit Event**, impact **10** —
-  it's the bankruptcy story. And look, the engine even tells you *why*: the
-  matched keywords and impact drivers are stored on every signal."
-- **The money shot — "Try it live" box.** Type a headline nobody in this room
-  has seen, e.g.:
-  `BREAKING: Nvidia faces massive antitrust probe as regulators investigate chip supply shortages`
-  hit Analyze → read the verdict: sentiment -0.79, Regulatory/Legal, impact 8,
-  high-risk flag, **and note the two chips at the bottom**: Module A just
-  rebalanced NVDA and Module B just triggered a stress test. One text in,
-  two systems moved.
-- Mention sources: "two feed types minimum were required — there are news and
-  social bundled, plus live NewsAPI, GDELT and Reddit connectors when keys
-  and internet are available. Fail-soft by design: the demo never depends on a
-  network."
+Type/say:
+> "Everything runs in one command. Clone the repo, install four light
+> dependencies, `python run.py` — and the engine, both modules, the API
+> and this dashboard all boot together. No GPU, no API keys, no internet
+> needed — by design, so this demo cannot break."
+(Show the terminal: `python run.py` → log lines → browser opens.)
 
-## 1:30 — Module A tab (1 min 15s)
+### 1:00–4:00 · End-to-end walkthrough (3 min)
 
-- "Module A is the tactical user of sentiment. Twenty S&P 100 stocks start
-  equal-weighted at 5%."
-- Show **current weights**: "After the feed ran, sentiment moved Walmart and
-  McDonald's up to ~7%, pushed Boeing and Bank of America down to ~2.6%.
-  The formula is right there on the card: new weight = old × (1 + 0.25 ×
-  sentiment), clamped between 2% and 12% so nothing dominates, then
-  renormalized to 100%."
-- Show **weights over time**: "This is the whole point — the index *drifts*
-  with sentiment in real time."
-- Show the **audit trail**: "Every weight change is logged with the signal
-  that caused it — you can reconstruct any decision."
+**Engine tab (1 min 15s):** live signal table ("new rows every few
+seconds — each one a tweet or headline that just got processed"). Read one
+row + its scores: *"bankruptcy story: sentiment −0.97, Credit Event,
+impact 10, high-risk flag — and the engine tells you why: matched keywords
+and impact drivers are stored on every signal."*
 
-## 2:45 — Module B tab (1 min 15s)
+**The inject box (45s) — the money shot:** type a fresh headline no one has
+seen, e.g. `BREAKING: Massive layoffs at Tesla as regulators probe demand
+collapse`, hit Analyze → read the verdict aloud, then point at the two
+chips: "Module A just rebalanced TSLA, and Module B just triggered a stress
+test. One text in, two systems moved."
 
-- "Module B is the strategic user. Same signals, opposite timescale — it
-  doesn't care about daily sentiment, it waits for high-impact events."
-- Show portfolio card: "Synthetic wholesale banking portfolio — $5.36bn,
-  38 positions, nine asset classes: corporate loans, CRE, government bonds,
-  corporates, MBS, derivatives, commitments, equity."
-- "Whenever a signal lands with impact ≥ 7, I run a stress scenario keyed
-  to the event type. Rates shock for Macroeconomic, credit shock for a
-  default, and so on."
-- Show **before/after chart** + P&L by class: "The last trigger was a credit
-  event — the portfolio dropped from $5.36bn to $5.00bn, about 6.6%. You can
-  see exactly where it hurt: corporate loans and bonds."
-- "Worst-hit positions table — this is what a risk officer would actually
-  look at first."
+**Module A tab (45s):** "20 stocks started equal-weighted at 5%. After the
+feed ran, Walmart and McDonald's floated up to ~7%, Boeing and Bank of
+America sank to ~2.6%. Formula is on the card — new weight = old × (1 +
+0.25 × sentiment), clamped 2–12%, renormalized. Every weight change is in
+the audit trail with the signal that caused it."
 
-## 4:00 — Wrap (1 min)
+**Module B tab (15s):** "Same signals, opposite timescale — this one waits
+for high-impact events. $5.36bn portfolio, 38 positions, nine asset
+classes."
 
-- "To recap: one engine, three explainable numbers, and two very different
-  consumers — a tactical rebalancer and a strategic stress tester — all
-  running live, offline, on a laptop."
-- If asked "what's real vs mocked": sources are simulated feeds of realistic
-  items (live connectors included, they activate with keys), the index is a
-  mock by requirement, the portfolio is synthetic by requirement — the
-  *engine, API, both modules and dashboard are fully real*.
-- Know your numbers (see cheat sheet in `Project_Report.pdf`): 93% of items
-  classified, ~10ms per signal, k=0.25, 2-12% band, trigger at 7, biggest
-  stress loss 8.1% ($435m).
+### 4:00–5:00 · Results & impact (60s)
+
+- Module B charts: "the last trigger was a credit event — portfolio drops
+  from $5.36bn to $5.00bn, about 6.6%. You can see exactly where it hurt:
+  corporate loans and high-yield bonds. Worst-hit positions table — what a
+  risk officer looks at first."
+- Numbers card: "58 items, 93% meaningfully classified, 0.3 milliseconds
+  per signal — about 3,300 signals a second on one laptop core, with every
+  number explaining itself. That's the auditability a real risk desk
+  actually needs."
+
+### 5:00–5:30 · Close (30s)
+
+> "One engine, three explainable numbers, two consumers — tactical
+> rebalancing and strategic stress testing — running live, offline, on a
+> laptop. The code, deck and detailed report are all in the repo. Thank
+> you."
+
+---
+
+## PART B — live jury pitch (5 min, if shortlisted)
+
+Same beats, compressed: **pitch (15s) → inject box live (90s, judges
+choose the headline) → Module A (60s) → Module B (60s) → wrap (30s)**.
+Leave the remaining ~60s for Q&A. Before the pitch: `python run.py`
+running and ready, README open, report cheat sheet (page 16) in memory —
+expected topics: why VADER not FinBERT (explainability + provider
+interface), impact-score calibration (transparent formula, drivers
+stored), what's real vs simulated (engine/API/modules/dashboard real;
+feeds are bundled samples, live connectors activate with keys), scaling
+(same pub/sub core behind Kafka/WSGI).
+
+---
+
+## Recording checklist
+
+- [ ] Resolution ≥1080p, browser zoomed so the dashboard fills most of the frame
+- [ ] Terminal visible when running setup commands
+- [ ] Record one take with the script beside you; pause-editing is fine
+- [ ] Upload → YouTube **Unlisted** → test in incognito window
+- [ ] Paste link into README (`Demo Video Link`) + the submission form
