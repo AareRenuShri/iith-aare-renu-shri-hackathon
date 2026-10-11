@@ -1,7 +1,7 @@
 [
  {
-  "signal_id": "sig_1791641380226_s006",
-  "ts": 1791641380.226414,
+  "signal_id": "sig_1791702600441_s006",
+  "ts": 1791702600.4417799,
   "item_id": "s006",
   "source": "social",
   "source_name": "X (Twitter) - @fedwatcher",
@@ -23,11 +23,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380227_n001",
-  "ts": 1791641380.227332,
+  "signal_id": "sig_1791702600442_n001",
+  "ts": 1791702600.442642,
   "item_id": "n001",
   "source": "news",
   "source_name": "Reuters",
@@ -52,11 +52,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380227_s002",
-  "ts": 1791641380.2277591,
+  "signal_id": "sig_1791702600443_s002",
+  "ts": 1791702600.443039,
   "item_id": "s002",
   "source": "social",
   "source_name": "X (Twitter) - @wallstwizard",
@@ -82,11 +82,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380228_n002",
-  "ts": 1791641380.228538,
+  "signal_id": "sig_1791702600443_n002",
+  "ts": 1791702600.443844,
   "item_id": "n002",
   "source": "news",
   "source_name": "Bloomberg",
@@ -116,11 +116,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380228_s001",
-  "ts": 1791641380.2289312,
+  "signal_id": "sig_1791702600444_s001",
+  "ts": 1791702600.444232,
   "item_id": "s001",
   "source": "social",
   "source_name": "X (Twitter) - @marketsnomad",
@@ -146,11 +146,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380229_n003",
-  "ts": 1791641380.229769,
+  "signal_id": "sig_1791702600445_n003",
+  "ts": 1791702600.445046,
   "item_id": "n003",
   "source": "news",
   "source_name": "CNBC",
@@ -179,11 +179,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380230_s003",
-  "ts": 1791641380.230185,
+  "signal_id": "sig_1791702600445_s003",
+  "ts": 1791702600.445451,
   "item_id": "s003",
   "source": "social",
   "source_name": "X (Twitter) - @macro_nomad",
@@ -203,11 +203,11 @@
    "+1 strongly negative sentiment"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380231_n004",
-  "ts": 1791641380.231036,
+  "signal_id": "sig_1791702600446_n004",
+  "ts": 1791702600.4462788,
   "item_id": "n004",
   "source": "news",
   "source_name": "Reuters",
@@ -231,11 +231,11 @@
    "+1 strongly negative sentiment"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380231_s004",
-  "ts": 1791641380.231543,
+  "signal_id": "sig_1791702600446_s004",
+  "ts": 1791702600.44677,
   "item_id": "s004",
   "source": "social",
   "source_name": "X (Twitter) - @bankstress",
@@ -256,11 +256,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380232_n005",
-  "ts": 1791641380.232471,
+  "signal_id": "sig_1791702600447_n005",
+  "ts": 1791702600.447667,
   "item_id": "n005",
   "source": "news",
   "source_name": "Financial Times",
@@ -283,11 +283,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380232_s005",
-  "ts": 1791641380.232927,
+  "signal_id": "sig_1791702600448_s005",
+  "ts": 1791702600.448096,
   "item_id": "s005",
   "source": "social",
   "source_name": "X (Twitter) - @techticker",
@@ -312,11 +312,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380233_n006",
-  "ts": 1791641380.233773,
+  "signal_id": "sig_1791702600448_n006",
+  "ts": 1791702600.448927,
   "item_id": "n006",
   "source": "news",
   "source_name": "WSJ",
@@ -344,11 +344,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380234_s007",
-  "ts": 1791641380.2342138,
+  "signal_id": "sig_1791702600449_s007",
+  "ts": 1791702600.4493551,
   "item_id": "s007",
   "source": "social",
   "source_name": "X (Twitter) - @shortseller_sam",
@@ -373,11 +373,11 @@
    "base 5 (Regulatory/Legal)"
   ],
   "risk_flag": "watch",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380235_n007",
-  "ts": 1791641380.235005,
+  "signal_id": "sig_1791702600450_n007",
+  "ts": 1791702600.45016,
   "item_id": "n007",
   "source": "news",
   "source_name": "Reuters",
@@ -403,11 +403,11 @@
    "base 5 (Regulatory/Legal)"
   ],
   "risk_flag": "watch",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380235_s008",
-  "ts": 1791641380.235447,
+  "signal_id": "sig_1791702600450_s008",
+  "ts": 1791702600.450572,
   "item_id": "s008",
   "source": "social",
   "source_name": "X (Twitter) - @aero_watch",
@@ -433,11 +433,11 @@
    "+1 strongly negative sentiment"
   ],
   "risk_flag": "watch",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380236_n008",
-  "ts": 1791641380.2362509,
+  "signal_id": "sig_1791702600451_n008",
+  "ts": 1791702600.451394,
   "item_id": "n008",
   "source": "news",
   "source_name": "Bloomberg",
@@ -465,11 +465,11 @@
    "+1 strongly negative sentiment"
   ],
   "risk_flag": "watch",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380236_s009",
-  "ts": 1791641380.236632,
+  "signal_id": "sig_1791702600451_s009",
+  "ts": 1791702600.45178,
   "item_id": "s009",
   "source": "social",
   "source_name": "X (Twitter) - @retail_raider",
@@ -496,11 +496,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380237_n009",
-  "ts": 1791641380.237419,
+  "signal_id": "sig_1791702600452_n009",
+  "ts": 1791702600.4525938,
   "item_id": "n009",
   "source": "news",
   "source_name": "CNBC",
@@ -529,11 +529,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380237_s010",
-  "ts": 1791641380.237824,
+  "signal_id": "sig_1791702600453_s010",
+  "ts": 1791702600.453019,
   "item_id": "s010",
   "source": "social",
   "source_name": "X (Twitter) - @tesla_bear",
@@ -560,11 +560,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380238_n010",
-  "ts": 1791641380.238695,
+  "signal_id": "sig_1791702600453_n010",
+  "ts": 1791702600.453932,
   "item_id": "n010",
   "source": "news",
   "source_name": "Reuters",
@@ -592,11 +592,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380239_s011",
-  "ts": 1791641380.239115,
+  "signal_id": "sig_1791702600454_s011",
+  "ts": 1791702600.454441,
   "item_id": "s011",
   "source": "social",
   "source_name": "X (Twitter) - @chip_chronicler",
@@ -627,11 +627,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380240_n011",
-  "ts": 1791641380.240038,
+  "signal_id": "sig_1791702600455_n011",
+  "ts": 1791702600.455455,
   "item_id": "n011",
   "source": "news",
   "source_name": "Financial Times",
@@ -665,11 +665,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380240_s012",
-  "ts": 1791641380.240407,
+  "signal_id": "sig_1791702600455_s012",
+  "ts": 1791702600.455861,
   "item_id": "s012",
   "source": "social",
   "source_name": "X (Twitter) - @pharma_phil",
@@ -694,11 +694,11 @@
    "+1 magnitude (record/massive)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380241_n012",
-  "ts": 1791641380.2412002,
+  "signal_id": "sig_1791702600456_n012",
+  "ts": 1791702600.456712,
   "item_id": "n012",
   "source": "news",
   "source_name": "Bloomberg",
@@ -728,11 +728,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380241_s013",
-  "ts": 1791641380.241663,
+  "signal_id": "sig_1791702600457_s013",
+  "ts": 1791702600.457202,
   "item_id": "s013",
   "source": "social",
   "source_name": "X (Twitter) - @wmt_shopper",
@@ -757,11 +757,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380242_n013",
-  "ts": 1791641380.242421,
+  "signal_id": "sig_1791702600457_n013",
+  "ts": 1791702600.45797,
   "item_id": "n013",
   "source": "news",
   "source_name": "Reuters",
@@ -787,11 +787,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380242_s014",
-  "ts": 1791641380.242794,
+  "signal_id": "sig_1791702600458_s014",
+  "ts": 1791702600.458344,
   "item_id": "s014",
   "source": "social",
   "source_name": "X (Twitter) - @heavy_equity",
@@ -817,11 +817,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "watch",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380243_n014",
-  "ts": 1791641380.243521,
+  "signal_id": "sig_1791702600459_n014",
+  "ts": 1791702600.459126,
   "item_id": "n014",
   "source": "news",
   "source_name": "CNBC",
@@ -848,11 +848,11 @@
    "+1 strongly negative sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380243_s015",
-  "ts": 1791641380.243928,
+  "signal_id": "sig_1791702600459_s015",
+  "ts": 1791702600.459533,
   "item_id": "s015",
   "source": "social",
   "source_name": "X (Twitter) - @energy_elder",
@@ -875,11 +875,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380244_n015",
-  "ts": 1791641380.244711,
+  "signal_id": "sig_1791702600460_n015",
+  "ts": 1791702600.460317,
   "item_id": "n015",
   "source": "news",
   "source_name": "WSJ",
@@ -906,11 +906,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380245_s016",
-  "ts": 1791641380.245146,
+  "signal_id": "sig_1791702600460_s016",
+  "ts": 1791702600.46075,
   "item_id": "s016",
   "source": "social",
   "source_name": "X (Twitter) - @vol_vulture",
@@ -932,11 +932,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380245_n016",
-  "ts": 1791641380.245908,
+  "signal_id": "sig_1791702600461_n016",
+  "ts": 1791702600.461513,
   "item_id": "n016",
   "source": "news",
   "source_name": "Reuters",
@@ -960,11 +960,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380246_s017",
-  "ts": 1791641380.246337,
+  "signal_id": "sig_1791702600461_s017",
+  "ts": 1791702600.4619431,
   "item_id": "s017",
   "source": "social",
   "source_name": "X (Twitter) - @credit_crunch",
@@ -990,11 +990,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380247_n017",
-  "ts": 1791641380.2471628,
+  "signal_id": "sig_1791702600462_n017",
+  "ts": 1791702600.462763,
   "item_id": "n017",
   "source": "news",
   "source_name": "Bloomberg",
@@ -1023,11 +1023,11 @@
    "+1 strongly negative sentiment"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380247_s018",
-  "ts": 1791641380.247607,
+  "signal_id": "sig_1791702600463_s018",
+  "ts": 1791702600.463228,
   "item_id": "s018",
   "source": "social",
   "source_name": "X (Twitter) - @ar_augur",
@@ -1050,11 +1050,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380248_n018",
-  "ts": 1791641380.248363,
+  "signal_id": "sig_1791702600464_n018",
+  "ts": 1791702600.464036,
   "item_id": "n018",
   "source": "news",
   "source_name": "CNBC",
@@ -1080,11 +1080,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380248_s019",
-  "ts": 1791641380.248768,
+  "signal_id": "sig_1791702600464_s019",
+  "ts": 1791702600.4644558,
   "item_id": "s019",
   "source": "social",
   "source_name": "X (Twitter) - @cola_catastrophe",
@@ -1112,11 +1112,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380249_n019",
-  "ts": 1791641380.249534,
+  "signal_id": "sig_1791702600465_n019",
+  "ts": 1791702600.465256,
   "item_id": "n019",
   "source": "news",
   "source_name": "Financial Times",
@@ -1144,11 +1144,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380250_s020",
-  "ts": 1791641380.250071,
+  "signal_id": "sig_1791702600465_s020",
+  "ts": 1791702600.4657412,
   "item_id": "s020",
   "source": "social",
   "source_name": "X (Twitter) - @biotech_bull",
@@ -1175,11 +1175,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380250_n020",
-  "ts": 1791641380.2509,
+  "signal_id": "sig_1791702600466_n020",
+  "ts": 1791702600.466412,
   "item_id": "n020",
   "source": "news",
   "source_name": "Reuters",
@@ -1205,11 +1205,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380251_s021",
-  "ts": 1791641380.251418,
+  "signal_id": "sig_1791702600466_s021",
+  "ts": 1791702600.4668531,
   "item_id": "s021",
   "source": "social",
   "source_name": "X (Twitter) - @cyber_cassandra",
@@ -1231,11 +1231,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380252_n021",
-  "ts": 1791641380.252246,
+  "signal_id": "sig_1791702600467_n021",
+  "ts": 1791702600.4675999,
   "item_id": "n021",
   "source": "news",
   "source_name": "WSJ",
@@ -1256,11 +1256,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380252_s022",
-  "ts": 1791641380.2526982,
+  "signal_id": "sig_1791702600468_s022",
+  "ts": 1791702600.468056,
   "item_id": "s022",
   "source": "social",
   "source_name": "X (Twitter) - @yield_hawkeye",
@@ -1287,11 +1287,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380253_n022",
-  "ts": 1791641380.253452,
+  "signal_id": "sig_1791702600468_n022",
+  "ts": 1791702600.468889,
   "item_id": "n022",
   "source": "news",
   "source_name": "Bloomberg",
@@ -1319,11 +1319,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380253_s023",
-  "ts": 1791641380.253865,
+  "signal_id": "sig_1791702600469_s023",
+  "ts": 1791702600.4693172,
   "item_id": "s023",
   "source": "social",
   "source_name": "X (Twitter) - @stream_stalker",
@@ -1349,11 +1349,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380254_n023",
-  "ts": 1791641380.254604,
+  "signal_id": "sig_1791702600470_n023",
+  "ts": 1791702600.47013,
   "item_id": "n023",
   "source": "news",
   "source_name": "CNBC",
@@ -1379,11 +1379,11 @@
    "-0.5 strongly positive sentiment"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380255_s024",
-  "ts": 1791641380.255,
+  "signal_id": "sig_1791702600470_s024",
+  "ts": 1791702600.4705338,
   "item_id": "s024",
   "source": "social",
   "source_name": "X (Twitter) - @tariff_tracker",
@@ -1408,11 +1408,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380255_n024",
-  "ts": 1791641380.2558138,
+  "signal_id": "sig_1791702600471_n024",
+  "ts": 1791702600.471352,
   "item_id": "n024",
   "source": "news",
   "source_name": "Reuters",
@@ -1436,11 +1436,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380256_s025",
-  "ts": 1791641380.256315,
+  "signal_id": "sig_1791702600471_s025",
+  "ts": 1791702600.4718962,
   "item_id": "s025",
   "source": "social",
   "source_name": "X (Twitter) - @fee_fighter",
@@ -1473,11 +1473,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380257_n025",
-  "ts": 1791641380.2570271,
+  "signal_id": "sig_1791702600472_n025",
+  "ts": 1791702600.472627,
   "item_id": "n025",
   "source": "news",
   "source_name": "Financial Times",
@@ -1511,11 +1511,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380257_s026",
-  "ts": 1791641380.2574599,
+  "signal_id": "sig_1791702600473_s026",
+  "ts": 1791702600.473084,
   "item_id": "s026",
   "source": "social",
   "source_name": "X (Twitter) - @credit_crunch",
@@ -1541,11 +1541,11 @@
    "+1 strongly negative sentiment"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380258_n026",
-  "ts": 1791641380.258326,
+  "signal_id": "sig_1791702600473_n026",
+  "ts": 1791702600.473964,
   "item_id": "n026",
   "source": "news",
   "source_name": "Bloomberg",
@@ -1572,11 +1572,11 @@
    "+1 strongly negative sentiment"
   ],
   "risk_flag": "high",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380258_s027",
-  "ts": 1791641380.258792,
+  "signal_id": "sig_1791702600474_s027",
+  "ts": 1791702600.4744372,
   "item_id": "s027",
   "source": "social",
   "source_name": "X (Twitter) - @cloud_curious",
@@ -1605,11 +1605,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380259_n027",
-  "ts": 1791641380.2594812,
+  "signal_id": "sig_1791702600475_n027",
+  "ts": 1791702600.475141,
   "item_id": "n027",
   "source": "news",
   "source_name": "CNBC",
@@ -1635,11 +1635,11 @@
    "base 3 (Product Launch)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380259_s028",
-  "ts": 1791641380.259903,
+  "signal_id": "sig_1791702600475_s028",
+  "ts": 1791702600.475591,
   "item_id": "s028",
   "source": "social",
   "source_name": "X (Twitter) - @value_menu",
@@ -1664,11 +1664,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380260_n028",
-  "ts": 1791641380.260609,
+  "signal_id": "sig_1791702600476_n028",
+  "ts": 1791702600.476316,
   "item_id": "n028",
   "source": "news",
   "source_name": "Reuters",
@@ -1695,11 +1695,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380261_s029",
-  "ts": 1791641380.261072,
+  "signal_id": "sig_1791702600476_s029",
+  "ts": 1791702600.476782,
   "item_id": "s029",
   "source": "social",
   "source_name": "X (Twitter) - @gossip_growth",
@@ -1729,11 +1729,11 @@
    "+1 broad scope (multi-company / sector-wide)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  },
  {
-  "signal_id": "sig_1791641380261_s030",
-  "ts": 1791641380.261615,
+  "signal_id": "sig_1791702600477_s030",
+  "ts": 1791702600.4773278,
   "item_id": "s030",
   "source": "social",
   "source_name": "X (Twitter) - @macro_musing",
@@ -1752,6 +1752,6 @@
    "base 6 (Macroeconomic)"
   ],
   "risk_flag": "none",
-  "ts_iso": "2026-10-10 19:39:40"
+  "ts_iso": "2026-10-11 12:40:00"
  }
 ]
