@@ -41,8 +41,7 @@
 ├── dashboard/          ← single-page live dashboard (offline Plotly)
 └── docs/
     ├── presentation.pdf ← 7-slide deck
-    ├── architecture.png ← diagram above
-    └── Project_Report_and_QA.pdf  ← detailed write-up (bonus supporting doc)
+    └── architecture.png ← diagram above
 ```
 
 ## 3. Dataset Used
@@ -93,4 +92,4 @@ python demo.py            # headless end-to-end run; prints results, writes demo
 
 **Domain impact.** The same signals feed two very different consumers — a *tactical* index desk (rebalance now) and a *strategic* risk desk (stress the book) — mirroring workflows that today require separate tooling and expensive data contracts. Because every score carries its evidence, the output is auditable by design, which is the entry ticket for anything used in real risk management. Compared with a naive alternative (call a cloud NLP API per headline and trust a black-box score), this engine is ~1000× faster per item, needs zero infrastructure, works offline, and can always explain itself.
 
-**Supporting material:** [`docs/presentation.pdf`](docs/presentation.pdf) (7 slides) · [`docs/Project_Report_and_QA.pdf`](docs/Project_Report_and_QA.pdf) (full design rationale, results, limitations and Q&A preparation) · [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md) (video walkthrough + live pitch script).
+**Supporting material:** [`docs/presentation.pdf`](docs/presentation.pdf) (7 slides) · [`DEMO_SCRIPT.md`](DEMO_SCRIPT.md) (video walkthrough + live pitch script).

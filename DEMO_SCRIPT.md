@@ -80,12 +80,7 @@ classes."
 Same beats, compressed: **pitch (15s) → inject box live (90s, judges
 choose the headline) → Module A (60s) → Module B (60s) → wrap (30s)**.
 Leave the remaining ~60s for Q&A. Before the pitch: `python run.py`
-running and ready, README open, report cheat sheet (page 16) in memory —
-expected topics: why VADER not FinBERT (explainability + provider
-interface), impact-score calibration (transparent formula, drivers
-stored), what's real vs simulated (engine/API/modules/dashboard real;
-feeds are bundled samples, live connectors activate with keys), scaling
-(same pub/sub core behind Kafka/WSGI).
+running and ready, README open.
 
 ---
 
