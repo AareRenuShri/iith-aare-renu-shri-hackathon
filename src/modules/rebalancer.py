@@ -22,8 +22,8 @@ import threading
 import time
 from typing import Callable, List
 
-from engine.entities import COMPANIES
-from engine.models import Signal
+from src.engine.entities import COMPANIES
+from src.engine.models import Signal
 
 # The mock index: every company in the entities dictionary (20 names,
 # one per sector-heavy S&P 100 subset). The "index" starts equal-weighted.

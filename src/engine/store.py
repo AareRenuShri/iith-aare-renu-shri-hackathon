@@ -10,7 +10,7 @@ import sqlite3
 import threading
 from pathlib import Path
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+DATA_DIR = Path(__file__).resolve().parent.parent.parent / "data"
 DB_PATH = DATA_DIR / "riskradar.db"
 JSONL_PATH = DATA_DIR / "signals.jsonl"
 

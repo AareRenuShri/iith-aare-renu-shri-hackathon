@@ -16,7 +16,7 @@ from flask import Flask, jsonify, request, send_from_directory
 from pathlib import Path
 
 log = logging.getLogger("riskradar.api")
-DASHBOARD_DIR = Path(__file__).resolve().parent.parent / "dashboard"
+DASHBOARD_DIR = Path(__file__).resolve().parent.parent.parent / "dashboard"
 
 
 def create_app(engine, rebalancer, stress_tester) -> Flask:
@@ -71,7 +71,7 @@ def create_app(engine, rebalancer, stress_tester) -> Flask:
         text = (payload.get("text") or "").strip()
         if not text:
             return jsonify({"error": "provide {\"text\": \"...\"}"}), 400
-        from engine.models import NewsItem
+        from src.engine.models import NewsItem
         item = NewsItem(id="manual", source="news", source_name="manual inject", text=text)
         sig = engine.process(item)
         return jsonify({

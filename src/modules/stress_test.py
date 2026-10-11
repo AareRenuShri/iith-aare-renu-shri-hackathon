@@ -29,9 +29,9 @@ import time
 from pathlib import Path
 from typing import List
 
-from engine.models import Signal
+from src.engine.models import Signal
 
-PORTFOLIO_PATH = Path(__file__).resolve().parent.parent / "data" / "portfolio.csv"
+PORTFOLIO_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "portfolio.csv"
 
 # Shock scenarios per event type: (rate_delta %, spread_delta bp, equity_pct, extra)
 SCENARIOS = {

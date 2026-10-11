@@ -16,9 +16,9 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-from engine import RiskEngine, NewsItem
-from engine.ingest import JSONLSource, load_jsonl, DATA_DIR
-from modules import IndexRebalancer, StressTester
+from src.engine import RiskEngine, NewsItem
+from src.engine.ingest import JSONLSource, load_jsonl, DATA_DIR
+from src.modules import IndexRebalancer, StressTester
 
 OUT = Path(__file__).resolve().parent / "demo_outputs"
 OUT.mkdir(exist_ok=True)

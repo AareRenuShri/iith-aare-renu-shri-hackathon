@@ -16,11 +16,11 @@ import logging
 import threading
 import webbrowser
 
-from engine import RiskEngine
-from engine.ingest import build_default_sources
-from engine.store import SignalStore
-from modules import IndexRebalancer, StressTester
-from api.server import create_app
+from src.engine import RiskEngine
+from src.engine.ingest import build_default_sources
+from src.engine.store import SignalStore
+from src.modules import IndexRebalancer, StressTester
+from src.api.server import create_app
 
 logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s %(name)s %(levelname)s %(message)s")
